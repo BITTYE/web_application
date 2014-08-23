@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="css/jquery.popupcommon.css"/>
 
     <link rel="stylesheet" href="css/style.css"/>
-    
-    
     <!--[if IE 9]>
     <link rel="stylesheet" href="../css/ie9.css"/>
     <![endif]-->

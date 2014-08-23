@@ -8,10 +8,14 @@ class home extends CI_Controller{
         parent::__construct();
         session_start();
         $this->load->model('homemodel');
+        $this->load->model('couponmodel');
     }
     public function index()
     {
-        $this->load->view('index');
+        $data['category']=$this->couponmodel->getcategories();
+        $data['sellers']=$this->couponmodel->getallsellers();
+      //  print_r($data);
+        $this->load->view('index',$data);
     }
     public function validate(){
         $email=$this->input->post('sys_email');
@@ -63,6 +67,13 @@ class home extends CI_Controller{
     {
         $id=$this->homemodel->inserttwitterdata();
         echo $id;
+    }
+    public function addcoupons()
+    {
+       $id= $this->couponmodel->addcoupontodb();
+      /* print_r('hai');
+       print_r($id);*/
+       echo $id;
     }
 }
 ?>
