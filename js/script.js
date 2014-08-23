@@ -132,6 +132,9 @@ $(function () {
     $("#sys_close_addcoupon_popup").on("click",function(){
         $("#sys_head_addcoupon").trigger("click");
     });
+    $("#sys_btn_submit").on("click",function(){
+        $("#sys_head_addcoupon").trigger("click");
+    });
     
     $("#sys_selected_val").on("click",function(e){
         $("#sys_list_dd_cate").fadeToggle(300);

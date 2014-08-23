@@ -89,6 +89,6 @@
      <label class="wrap-txt" >
         <input class="input-txt" id="coupon_description" type="text" placeholder="coupen description"/>
     </label>
-       <button id="sys_close_addcoupon_popup" class="btn-flat gr btn-submit-reg" type="button" onclick="postcoupon();">Submit</button>
+       <button id="sys_btn_submit" class="btn-flat gr btn-submit-reg" type="button" onclick="postcoupon();">Submit</button>
    </form>
 </div>

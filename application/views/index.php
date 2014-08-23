@@ -1,5 +1,6 @@
 <?php 
 $level=$this->session->userdata('userlevel');
+echo $level;
 ?>
 <!DOCTYPE html>
 <html>

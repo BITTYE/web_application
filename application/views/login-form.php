@@ -12,12 +12,13 @@ function sub()
            sys_pass:sys_pass},
       success:function(data){
            
-        if(data=="success"){
-            
-            location.href='<?php echo base_url();?>home';
-        }else {
-              location.href='<?php echo base_url();?>home/homeview';
-        }
+        if(data=="success")
+        {
+           // location.href='<?php// echo base_url();?>home';
+        }/*else {
+              location.href='<?php// echo base_url();?>home/homeview';
+        }*/
+                 location.href='<?php echo base_url();?>home';
     },
    });
 }

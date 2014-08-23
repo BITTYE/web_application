@@ -23,7 +23,8 @@ class home extends CI_Controller{
         $data = $this->homemodel->Validateadmin($email,$pass);
         if($data){
            $level=$data->level;
-           $this->session->set_userdata('userlevel',$level);
+          $this->session->set_userdata('userlevel',$level);
+         //  set_cookie('userlevel',$level);
             echo 'success';
         }
         else {
@@ -32,7 +33,8 @@ class home extends CI_Controller{
      }
     public function homeview()
     {
-        $this->session->unset_userdata('userlevel');
+       $this->session->unset_userdata('userlevel');
+       // unset($_COOKIE['userlevel']);
          $this->load->view('index-2');
     }
     public function coupon()
