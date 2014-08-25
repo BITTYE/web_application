@@ -1,4 +1,4 @@
-<?php
+<?php 
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +30,24 @@
     <!--[if lte IE 8]>
         <script type="text/javascript" src="../js/html5.js"></script>
     <![endif]-->
+    <script>
+        function adminsub()
+{
+   var sys_email=document.getElementById('sys_email').value;
+   var sys_pass=document.getElementById('sys_pass').value;
 
+   $.ajax({
+      url:'<?php echo base_url();?>home/validate',
+      type:'post',
+      async:false,
+      data:{sys_email:sys_email,
+           sys_pass:sys_pass},
+      success:function(data){
+            location.href='<?php echo base_url();?>home/coupon';
+    },
+   });
+}
+    </script>
 </head>
 <body class=""><!--<div class="alert_w_p_u"></div>-->
 <div class="container-page">
@@ -45,7 +62,12 @@
                                     <img src="<?php echo base_url();?>images/logo.png" alt="$SITE_NAME"/>
                                 </a>
                             </h1>
-                            <a id="sys_head_login" class="btn btn-green type-login btn-login" href="#">Login</a>
+                              <?php $level=$this->session->userdata('userlevel'); ?>
+                  <?php if($level==1){ ?>
+                     <a id="sys_head_addcoupon" class="btn btn-green type-login btn-login" href="#">Add coupon</a>
+                  <?php } else  { ?>
+                    <a id="sys_head_login" class="btn btn-green type-login btn-login" href="#">Login</a>
+                  <?php }?>
                             <nav class="main-nav">
                                 <ul id="main-menu" class="nav nav-horizontal clearfix">
                                     <li>
@@ -62,7 +84,7 @@
                                         </ul>
                                     </li>
                                     <li class="has-sub">
-                                        <a href="<?php echo base_url();?>home/brand_list">Brands</a>
+                                        <a href="<?php echo base_url();?>home/brandlist">Brands</a>
                                         <ul class="sub-menu">
                                             <li><a href="brand-detail-1.html">Brand Detail 1</a></li>
                                             <li><a href="brand-detail-2.html">Brand Detail 2</a></li>
@@ -71,7 +93,7 @@
                                             <li><a href="brand-detail-5.html">Brand Detail 5</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="<?php echo base_url();?>home/blog">Blog</a></li>
                                     <li>
                                         <a href="my-coupon.html">My coupons</a>
                                         <i class="icon iPickRed lbl-count"><span>12</span></i>
@@ -92,10 +114,10 @@
                                 <form action="#">
                                     <div class="left-form">
                                         <label class="wrap-txt" for="sys_email">
-                                            <input class="input-txt" id="sys_email" type="email" placeholder="you@mail.com">
+                                            <input class="input-txt" id="sys_email" name="sys_email" type="email" placeholder="you@mail.com">
                                         </label>
                                         <label class="wrap-txt" for="sys_pass">
-                                            <input class="input-txt" id="sys_pass" type="password" placeholder="password please!">
+                                            <input class="input-txt" id="sys_pass" name="sys_pass" type="password" placeholder="password please!">
                                         </label>
                                         <label class="wrap-check" for="sys_chk_news">
                                             <input id="sys_chk_news" class="input-chk" type="checkbox"> Remember me
@@ -103,7 +125,7 @@
                                             <a class="lost-pass" href="#">Forgot password ?</a>
                                         </label>
                                         <div class="wrap-login-btn">
-                                            <button class="btn-flat gr btn-submit-reg" type="submit">Login</button>
+                                            <button class="btn-flat gr btn-submit-reg" type="button" onclick="adminsub();">Login</button>
                                             <div class="sep-connect">
                                                 <span>Or</span>
                                             </div>
@@ -172,6 +194,25 @@
                     <i id="sys_close_login_popup" class="icon iClose close-popop"></i>
                 </div>
             </div>
+             <div id="sys_pop_addcoupon" class="pop-login">
+        <div class="viewport-pop">
+            <div class="transport-viewer clearfix">
+                <div class="mod-register">
+                    <h3 class="rs title-mod">Hello pretty! Welcome to coupon register</h3>
+                    <div class="wrap-form-reg clearfix">
+                        <form action="#">
+                            <?php include 'coupon_register.php';?>
+                        </form>
+                    </div>
+                </div><!--end: Login panel -->
+            </div>
+            <div id="sys_paging_state" class="paging-state">
+                <i class="active"></i>
+                <i></i>
+            </div>
+            <i id="sys_close_addcoupon_popup" class="icon iClose close-popop"></i>
+        </div>
+    </div>
         </header><!--end: header.mod-header -->
         <nav id="mp-menu" class="mp-menu alternate-menu">
             <div class="mp-level">

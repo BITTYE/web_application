@@ -60,7 +60,7 @@
                                         </ul>
                                     </li>
                                     <li class="has-sub">
-                                        <a href="<?php echo base_url();?>home/brand_list">Brands</a>
+                                        <a href="<?php echo base_url();?>home/brandlist">Brands</a>
                                         <ul class="sub-menu">
                                             <li><a href="brand-detail-1.html">Brand Detail 1</a></li>
                                             <li><a href="brand-detail-2.html">Brand Detail 2</a></li>
@@ -69,9 +69,9 @@
                                             <li><a href="brand-detail-5.html">Brand Detail 5</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="<?php echo base_url();?>home/blog">Blog</a></li>
                                     <li>
-                                        <a href="my-coupon.html">My coupons</a>
+                                        <a href="<?php echo base_url();?>home/mycoupon">My coupons</a>
                                         <i class="icon iPickRed lbl-count"><span>12</span></i>
                                     </li>
                                 </ul>

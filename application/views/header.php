@@ -7,8 +7,8 @@ if (array_key_exists("login", $_GET)) {
 }
 ?>
 <div id="fb-root" style="float:left; width:1px;"></div>
- <script>
-            window.fbAsyncInit = function() {
+<script>
+window.fbAsyncInit = function() {
 	FB.init({
 	    appId: '276988829092618',
         cookie: true,
@@ -29,7 +29,7 @@ if (array_key_exists("login", $_GET)) {
 	 }
 	},{scope: 'publish_stream'});
 }
-        </script>
+</script>
 <header class="mod-header">
     <div class="grid_frame">
         <div class="container_grid clearfix">
@@ -40,6 +40,7 @@ if (array_key_exists("login", $_GET)) {
                             <img src="images/logo.png" alt="$SITE_NAME"/>
                         </a>
                     </h1>
+                    <?php $level=$this->session->userdata('userlevel'); ?>
                   <?php if($level==1){ ?>
                      <a id="sys_head_addcoupon" class="btn btn-green type-login btn-login" href="#">Add coupon</a>
                   <?php } else  { ?>
@@ -61,7 +62,7 @@ if (array_key_exists("login", $_GET)) {
                                 </ul>
                             </li>
                             <li class="has-sub">
-                                <a href="<?php echo base_url();?>home/brand_list">Brands</a>
+                                <a href="<?php echo base_url();?>home/brandlist">Brands</a>
                                 <ul class="sub-menu">
                                     <li><a href="brand-detail-1.html">Brand Detail 1</a></li>
                                     <li><a href="brand-detail-2.html">Brand Detail 2</a></li>
@@ -70,9 +71,9 @@ if (array_key_exists("login", $_GET)) {
                                     <li><a href="brand-detail-5.html">Brand Detail 5</a></li>
                                 </ul>
                             </li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="<?php echo base_url();?>home/blog">Blog</a></li>
                             <li>
-                                <a href="my-coupon.html">My coupons</a>
+                                <a href="<?php echo base_url();?>home/mycoupon">My coupons</a>
                                 <i class="icon iPickRed lbl-count"><span>12</span></i>
                             </li>
                         </ul>
@@ -141,9 +142,9 @@ if (array_key_exists("login", $_GET)) {
                 <div class="mod-register">
                     <h3 class="rs title-mod">Hello pretty! Welcome to coupon register</h3>
                     <div class="wrap-form-reg clearfix">
-                        <form action="#">
+                       
                             <?php include 'coupon_register.php';?>
-                        </form>
+                       
                     </div>
                 </div><!--end: Login panel -->
             </div>
