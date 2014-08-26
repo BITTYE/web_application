@@ -1,9 +1,8 @@
-<?php?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Coupon code</title>
+    <title>Blog</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="<?php echo base_url();?>css/font.css"/>
@@ -57,7 +56,7 @@
                                     <li class="has-sub">
                                         <a href="<?php echo base_url();?>home/couponcode">Coupons Code</a>
                                         <ul class="sub-menu">
-                                            <li><a href="<?php echo base_url();?>home/couponcode">Coupons Code 1</a></li>
+                                            <li><a href="coupon-code.html">Coupons Code 1</a></li>
                                             <li><a href="coupon-code-2.html">Coupons Code 2</a></li>
                                         </ul>
                                     </li>
@@ -71,7 +70,7 @@
                                             <li><a href="brand-detail-5.html">Brand Detail 5</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="<?php echo base_url();?>home/blog">Blog</a></li>
+                                    <li class="active"><a href="<?php echo base_url();?>home/blog">Blog</a></li>
                                     <li>
                                         <a href="<?php echo base_url();?>home/mycoupon">My coupons</a>
                                         <i class="icon iPickRed lbl-count"><span>12</span></i>
@@ -214,288 +213,92 @@
             <div class="grid_frame">
                 <div class="container_grid clearfix">
                     <div class="grid_12">
-                        <h2 class="page-title">Coupon Code</h2>
+                        <h2 class="page-title">Blog</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="sys_mod_filter" class="mod-filter">
-            <div class="grid_frame">
-                <div class="container_grid clearfix">
-                    <div class="grid_12">
-                        <div class="lbl-search">
-                            <input class="txt-search" id="sys_txt_search" type="search" placeholder="Search"/>
-                            <input type="submit" class="btn-search" value=""/>
-                        </div>
-                        <div class="select-cate">
-                            <div id="sys_selected_val" class="show-val">
-                                <span data-cate-id="0">All type</span>
-                                <i class="pick-down"></i>
-                            </div>
-                            <div id="sys_list_dd_cate" class="dropdown-cate">
-                                <div class="first-lbl">All Categories</div>
-                                <div class="wrap-list-cate clearfix">
-                                    <a href="#" data-cate-id="1">Baby & Toddler</a>
-                                    <a href="#" data-cate-id="2">Automotive </a>
-                                    <a href="#" data-cate-id="3">Beverages</a>
-                                    <a href="#" data-cate-id="4">Books & Magazines</a>
-                                    <a href="#" data-cate-id="5">Foods </a>
-                                    <a href="#" data-cate-id="6">Health Care</a>
-                                    <a href="#" data-cate-id="7">Home Entertainment</a>
-                                    <a href="#" data-cate-id="8">Personal Care </a>
-                                    <a href="#" data-cate-id="9">Pet Care </a>
-                                    <a href="#" data-cate-id="10">Professional Services </a>
-                                    <a href="#" data-cate-id="11">Toys and Games</a>
-                                    <a href="#" data-cate-id="12">Coupon Codes</a>
-                                    <a href="#" data-cate-id="13">Recipes</a>
-                                    <a href="#" data-cate-id="14">Household </a>
-                                </div>
-                            </div>
-                        </div><!--end: .select-cate -->
-                        <div class="range-days-left">
-                            <span class="lbl-day">Days left</span>
-                            <span id="sys_min_day" class="min-day"></span>
-                            <div id="sys_filter_days_left" class="filter-days"></div>
-                            <span id="sys_max_day" class="max-day"></span>
-                        </div><!--end: .range-days-left -->
-                        <input id="sys_apply_filter" class="btn btn-red type-1 btn-apply-filter" type="button" value="Apply Filter">
-                    </div>
-                </div>
-            </div>
-        </div><!--end: .mod-filter -->
         <div class="grid_frame page-content">
             <div class="container_grid">
-                <div class="layout-2cols clearfix">
+                <div class="layout-2cols pt-hight clearfix">
                     <div class="grid_8 content">
-                        <div class="mod-coupons-code">
-                            <div class="wrap-list">
-                                <div class="coupons-code-item full flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/04-01.jpg" alt="$BRAND_NAME"></a>
+                        <div class="mod-list-article">
+                            <div class="list-article">
+                                <div class="article-item">
+                                    <a href="blog-detail.html"><img class="feature-img" src="<?php echo base_url();?>images/ex/12-01.jpg" alt="$ARTICLE_TITLE"/></a>
+                                    <div class="flex">
+                                        <div class="thumb-left wrap-date-post">
+                                            <div class="date">
+                                                <span class="day">12</span>
+                                                <span class="my">May / 2013</span>
                                             </div>
+                                            <a class="btn-more" href="blog-detail.html">Read more</a>
+                                        </div>
+                                        <div class="flex-body">
+                                            <p class="art-title rs"><a href="blog-detail.html">Lorem ipsum dolor sit amet consectetuer </a></p>
+                                            <p class="rs art-desc">Nullam magna velit, rhoncus at urna et, dapibus eu, fermentum eros. Integer sit amet purus hendrerit, porttitor ligula et, mollis est. Etiam odio est, pharetra non dui eu, blandit lacinia nunc. Proin vel pharetra lacus. Quisque at elit et elit elementum tempor quis quis mi</p>
                                         </div>
                                     </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 20%-50% Off All Vitamin World Brand Items</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">12 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">2 <i class="icon iSubVote"></i></span>
-                                                </span>
+                                </div><!--end: article-item -->
+                                <div class="article-item">
+                                    <a href="blog-detail.html"><img class="feature-img" src="<?php echo base_url();?>images/ex/12-02.jpg" alt="$ARTICLE_TITLE"/></a>
+                                    <div class="flex">
+                                        <div class="thumb-left wrap-date-post">
+                                            <div class="date">
+                                                <span class="day">31</span>
+                                                <span class="my">Dec / 2013</span>
                                             </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
+                                            <a class="btn-more" href="blog-detail.html">Read more</a>
+                                        </div>
+                                        <div class="flex-body">
+                                            <p class="art-title rs"><a href="blog-detail.html">Integer ut nisl eu mi aliquet</a></p>
+                                            <p class="rs art-desc">Duis eleifend eu magna dapibus viverra. Proin lorem lorem, lacinia eu massa vel, tempus condimentum quam. Mauris nec cursus ipsum, nec rhoncus lectus. Sed velit magna, ullamcorper a metus quis, dictum sollicitudin diam. In sed metus sed augue tempor volutpat</p>
                                         </div>
                                     </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/04-04.jpg" alt="$BRAND_NAME"></a>
+                                </div><!--end: article-item -->
+                                <div class="article-item">
+                                    <a href="blog-detail.html"><img class="feature-img" src="<?php echo base_url();?>images/ex/12-03.jpg" alt="$ARTICLE_TITLE"/></a>
+                                    <div class="flex">
+                                        <div class="thumb-left wrap-date-post">
+                                            <div class="date">
+                                                <span class="day">07</span>
+                                                <span class="my">Jun / 2013</span>
                                             </div>
+                                            <a class="btn-more" href="blog-detail.html">Read more</a>
+                                        </div>
+                                        <div class="flex-body">
+                                            <p class="art-title rs"><a href="blog-detail.html">Sed egestas condimentum massa nec pellentesque</a></p>
+                                            <p class="rs art-desc">Morbi commodo enim a ante tincidunt auctor. Curabitur orci est, tristique eget gravida sit amet, faucibus interdum ipsum. In vulputate varius placerat. Nam erat turpis, consectetur sed rutrum pharetra, interdum vel nibh.</p>
                                         </div>
                                     </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">12 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">2 <i class="icon iSubVote"></i></span>
-                                                </span>
+                                </div><!--end: article-item -->
+                                <div class="article-item">
+                                    <a href="blog-detail.html"><img class="feature-img" src="<?php echo base_url();?>images/ex/12-04.jpg" alt="$ARTICLE_TITLE"/></a>
+                                    <div class="flex">
+                                        <div class="thumb-left wrap-date-post">
+                                            <div class="date">
+                                                <span class="day">20</span>
+                                                <span class="my">Feb / 2013</span>
                                             </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
+                                            <a class="btn-more" href="blog-detail.html">Read more</a>
+                                        </div>
+                                        <div class="flex-body">
+                                            <p class="art-title rs"><a href="blog-detail.html">Nam lectus elit, condimentum sed imperdie</a></p>
+                                            <p class="rs art-desc">Quisque justo magna, bibendum eget ante nec, luctus pellentesque libero. Duis interdum congue congue. Etiam purus lacus, tempus eu fringilla vehicula, ornare sed mauris.</p>
                                         </div>
                                     </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/04-05.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 20%-50% Off All Vitamin World Brand Items</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">16 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">0 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/04-02.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">21 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">12 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/04-06.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 20%-50% Off All Vitamin World Brand Items</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">321 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">5 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/04-04.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">34 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">8 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/04-01.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 20%-50% Off All Vitamin World Brand Items</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">59 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">21 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/04-05.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">63 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">10 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
-                                <div class="coupons-code-item flex">
-                                    <div class="brand-logo thumb-left">
-                                        <div class="wrap-logo">
-                                            <div class="center-img">
-                                                <span class="ver_hold"></span>
-                                                <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/04-06.jpg" alt="$BRAND_NAME"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-content flex-body">
-                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
-                                        <p class="rs coupon-desc">Must book by 11:59PM CT on 11/17/13. Travel completed by 3/30/14.</p>
-                                        <div class="bottom-action">
-                                            <div class="left-vote">
-                                                <span class="lbl-work">100% work</span>
-                                                <span>
-                                                    <span class="lbl-vote">63 <i class="icon iAddVote"></i></span>
-                                                    <span class="lbl-vote">10 <i class="icon iSubVote"></i></span>
-                                                </span>
-                                            </div>
-                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
-                                        </div>
-                                    </div>
-                                </div><!--end: .coupons-code-item -->
+                                </div><!--end: article-item -->
                             </div>
                             <div class="pagination">
-                                <a class="page-nav" href="#"><i class="icon iPrev"></i></a>
+                                <a class="txt-nav" href="#">Newer post</a>
                                 <a class="page-num active" href="#">1</a>
                                 <a class="page-num" href="#">2</a>
                                 <a class="page-num" href="#">3</a>
                                 <a class="page-num" href="#">4</a>
                                 <a class="page-num" href="#">5</a>
-                                <a class="page-nav" href="#"><i class="icon iNext"></i></a>
+                                <a class="txt-nav" href="#">Older post</a>
                             </div>
-                        </div><!--end: .mod-coupons-code -->
+                        </div><!--end: .mod-list-article -->
                     </div>
                     <div class="grid_4 sidebar">
                         <div class="mod-search block">
@@ -693,12 +496,12 @@
                                 <h3 class="title-block">Intro Video</h3>
                                 <div class="block-content">
                                      <div class="block-content">
-                                    <div class="wrap-video" id="sys_wrap_video">
-                                        <div class="lightbox-video">
+                                        <div class="wrap-video" id="sys_wrap_video">
+                                            <div class="lightbox-video">
                                                 <a class="html5lightbox" href="http://player.vimeo.com/video/36932496" title=""><i class="btn-play"></i><img src="<?php echo base_url();?>images/video-img.png" alt=""></a>
                                             </div>
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                             </div>
                         </div><!--end: Intro Video -->
@@ -708,7 +511,7 @@
                                 <div class="block-content">
                                     <div class="entry-item flex">
                                         <a class="thumb-left" href="#">
-                                            <img src="<?php echo base_url();?>images/ex/04-13.jpg" alt="$TITLE"/>
+                                            <img src="<?php echo base_url();?>images/ex/04-14.jpg" alt="$TITLE"/>
                                         </a>
                                         <div class="flex-body"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing eli</a></div>
                                     </div>
@@ -735,7 +538,7 @@
                             <a href="#">Contact</a>
                         </div>
                         <div class="copyright">
-                            Copyright © 2014 by CouponDay. Designed by MegaDrupal
+                            Copyright &copy; 2014 by www.couponday.com
                         </div>
                     </div>
                 </div>
@@ -744,18 +547,18 @@
     </div>
 </div>
 
-<script type="text/javascript" src="<?php echo base_url();?>js/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/jquery.nouislider.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/jquery.popupcommon.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/html5lightbox.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.nouislider.js"></script>
+<script type="text/javascript" src="js/jquery.popupcommon.js"></script>
+<script type="text/javascript" src="js/html5lightbox.js"></script>
 
 <!--//js for responsive menu-->
-<script type="text/javascript" src="<?php echo base_url();?>js/modernizr.custom.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/classie.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>js/mlpushmenu.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/mlpushmenu.js"></script>
 
-<script type="text/javascript" src="<?php echo base_url();?>js/script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 <!--[if lte IE 9]>
 <script type="text/javascript" src="../js/jquery.placeholder.js"></script>

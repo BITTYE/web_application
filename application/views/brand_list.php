@@ -73,7 +73,7 @@
                                     </li>
                                     <li><a href="<?php echo base_url();?>home/blog">Blog</a></li>
                                     <li>
-                                        <a href="my-coupon.html">My coupons</a>
+                                        <a href="<?php echo base_url();?>home/mycoupon">My coupons</a>
                                         <i class="icon iPickRed lbl-count"><span>12</span></i>
                                     </li>
                                 </ul>

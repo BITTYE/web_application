@@ -28,14 +28,26 @@ if ($users!="") {
          
         $tokenarr=explode("::",base64_decode($newtoken));
 		$passcode=$tokenarr[0];
+            $msql = mysql_query("SELECT * FROM buyer WHERE facebook_token='".$fuserid."'" );
+
+	if(mysql_num_rows($msql)>0){
+             while($array =mysql_fetch_array($msql)){
                 
-	
-	// print_r($gender);
-              $msql = $this->db->query("insert into buyer values('','".$firstname."','".$lastname."','".$displayname."','".$gender."','','','".$profile_pic."','','','','','','','".$passcode."','','','','','','')" );
-               
+                $this->session->set_userdata('User',$array['user_id']);
+                }
+		$sqlrow=mysql_fetch_object($msql);
+               redirect('home');
+	}else {
+              $msql = $this->db->query("insert into buyer values('','".$firstname."','".$lastname."','".$displayname."','".$gender."','','','','','','','','','','".$passcode."','','','','','','')" );
                $id=$this->db->insert_id();
-               echo 'welcome user';
-          
+              
+               $attachmentarray = array();
+              file_put_contents("./profileimage/image_".$id.".png", $profile_pic);
+             array_push($attachmentarray, "image_".$id.".png");
+                   
+             $attachmentjsonarray=json_encode($attachmentarray);
+           redirect('home');
+        }
 
   } catch (FacebookApiException $e) {
   
