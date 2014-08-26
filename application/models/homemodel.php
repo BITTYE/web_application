@@ -36,5 +36,40 @@ class homemodel extends CI_Model{
             return 0;
         }
     }
+    public function registerbuyer()
+    {
+         $first_name=$this->input->post('first_name');
+        $last_name=$this->input->post('last_name');
+        $displayname=$first_name.$last_name;
+        $sys_email=$this->input->post('sys_email');
+        $mobile_num=$this->input->post('mobile_num');
+        $sys_pass=$this->input->post('sys_pass');
+        $sys_buyercity=$this->input->post('sys_buyercity');
+         $sys_dateofbirth=$this->input->post('sys_dateofbirth');
+        $sys_buyercity=$this->input->post('sys_buyercity');
+         $gender=$this->input->post('gender');
+       
+        $this->db->query("insert into buyer values('','".$first_name."','".$last_name."','".$displayname."','".$gender."',
+            '".$mobile_num."','".$sys_pass."','','','".$sys_buyercity."','','','','','',
+            '','','','','','')");
+        $id=$this->db->insert_id();
+         $name="image"."_$id";
+         $document="";
+                if($_FILES['profile_image']['tmp_name']!=""){
+                    $ext =  end(explode('.', $_FILES['profile_image']['name']));
+                    
+                    move_uploaded_file($_FILES["profile_image"]["tmp_name"],
+                   "./profileimage/" . $_FILES["profile_image"]["name"]);
+                    rename('./profileimage/'. $_FILES["profile_image"]["name"], './profileimage/'.$name.".".$ext);
+                     $document = $name.".".$ext;
+                } 
+                $attachmentarray = array();
+                  array_push($attachmentarray, $document);
+                  $attachmentjsonarray=json_encode($attachmentarray);
+                  
+             $this->db->query("update buyer set profile_pic='".$attachmentjsonarray."' where id='".$id."'");
+        
+        
+    }
 }
 ?>

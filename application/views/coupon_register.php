@@ -5,12 +5,6 @@
 <script src="<?php echo base_url();?>js/jquery-1.10.2.js"></script>
 <script src="<?php echo base_url();?>js/Date.js"></script>
 <script type="text/javascript">
-
- $(document).ready(function (){
- 
-     $("#coupon_startdate").datepicker({ dateFormat: 'dd-mm-yy',changeMonth: true,
-      changeYear: true,yearRange: "-80:+1" });
- });
  function postcoupon()
   {
      var flag=true;    
@@ -23,7 +17,7 @@
       var coupon_description=document.getElementById('coupon_description').value;*/
       
     /*  if(document.getElementById('category').value==''){
-          alertr()
+          
           flag=false;
       }
        if(document.getElementById('seller').value==''){
@@ -87,19 +81,19 @@
         <input class="input-txt" id="coupon_title" name="coupon_title" type="text" placeholder="coupon title"/>
     </label>
     <label class="wrap-txt grid_6 make-right" >
-        <input type='file' id="coupon_image" name="coupon_image"/>
+        <input type="file" id="coupon_image" name="coupon_image"/>
     </label> 
     <label class="wrap-txt" >
-        <input class="input-txt" name="coupon_startdate" id="coupon_startdate" type="date" placeholder="coupen start date"/>
+        <input class="input-txt" name="coupon_startdate" id="coupon_startdate" type="date" placeholder="coupon start date"/>
     </label>
     <label class="wrap-txt" >
-        <input class="input-txt" name="coupon_enddate" id="coupon_enddate" type="date" placeholder="coupen end date"/>
+        <input class="input-txt" name="coupon_enddate" id="coupon_enddate" type="date" placeholder="coupon end date"/>
     </label>
      <label class="wrap-txt" >
-        <input class="input-txt" id="coupon_cost" name="coupon_cost" type="text" placeholder="coupen price amount"/>
+        <input class="input-txt" id="coupon_cost" name="coupon_cost" type="text" placeholder="coupon price amount"/>
     </label>
      <label class="wrap-txt" >
-        <input class="input-txt" id="coupon_description" name="coupon_description" type="text" placeholder="coupen description"/>
+        <input class="input-txt" id="coupon_description" name="coupon_description" type="text" placeholder="coupon description"/>
     </label>
        <button class="btn-flat gr btn-submit-reg" type="submit" onclick="return postcoupon();">Submit</button>
  </form>

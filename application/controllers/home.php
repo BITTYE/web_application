@@ -14,7 +14,7 @@ class home extends CI_Controller{
     {
         $data['category']=$this->couponmodel->getcategories();
         $data['sellers']=$this->couponmodel->getallsellers();
-        $data['coupens']=$this->couponmodel->getallcoupons();
+        $data['coupons']=$this->couponmodel->getallcoupons();
       //  print_r($data);
         $this->load->view('index',$data);
     }
@@ -61,6 +61,11 @@ class home extends CI_Controller{
     public function register()
     {
         $this->load->view('register');
+    }
+    public function registerbuyer()
+    {
+        $this->homemodel->registerbuyer();
+        redirect('home');
     }
     public function loginfacebook()
     {

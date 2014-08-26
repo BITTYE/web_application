@@ -25,7 +25,7 @@ class couponmodel extends CI_Model{
         $coupon_cost=$this->input->post('coupon_cost');
         $coupon_description=$this->input->post('coupon_description');
         
-        $this->db->query("insert into coupens values('','".$sellerid."','".$categoryid."','1','".$coupon_title."',
+        $this->db->query("insert into coupons values('','".$sellerid."','".$categoryid."','1','".$coupon_title."',
              '','','','','".$coupon_cost."','','','','".$coupon_description."','','','','')");
         $id=$this->db->insert_id();
          $name="image"."_$id";
@@ -34,20 +34,20 @@ class couponmodel extends CI_Model{
                     $ext =  end(explode('.', $_FILES['coupon_image']['name']));
                     
                     move_uploaded_file($_FILES["coupon_image"]["tmp_name"],
-                   "./coupenimages/" . $_FILES["coupon_image"]["name"]);
-                    rename('./coupenimages/'. $_FILES["coupon_image"]["name"], './coupenimages/'.$name.".".$ext);
+                   "./couponimages/" . $_FILES["coupon_image"]["name"]);
+                    rename('./couponimages/'. $_FILES["coupon_image"]["name"], './couponimages/'.$name.".".$ext);
                      $document = $name.".".$ext;
                 } 
                 $attachmentarray = array();
                   array_push($attachmentarray, $document);
                   $attachmentjsonarray=json_encode($attachmentarray);
                   
-             $this->db->query("update coupens set coupen_images='".$attachmentjsonarray."' where id='".$id."'");
+             $this->db->query("update coupons set coupon_images='".$attachmentjsonarray."' where id='".$id."'");
         return $id;
     }
     public function getallcoupons()
     {
-        $result=$this->db->query("select * from coupens ");
+        $result=$this->db->query("select * from coupons ");
         return $result->result();
     }
 }

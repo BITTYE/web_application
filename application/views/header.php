@@ -89,7 +89,7 @@ window.fbAsyncInit = function() {
                 <div class="mod-register">
                     <h3 class="rs title-mod">Hello pretty! Welcome to bittye.com</h3>
                     <div class="wrap-form-reg clearfix">
-                        <form action="#">
+                       
                             <?php include 'login-form.php';?>
                             <div class="right-create-acc">
                                 <img class="account" src="images/reg-account.png" alt="bittye.com">
@@ -97,7 +97,7 @@ window.fbAsyncInit = function() {
                                 <a id="sys_link_reg_panel" href="<?php echo base_url();?>home/register" class="btn-flat yellow btn-submit-reg">Create an account</a>
                                 <div id="sys_warning_sms" class="warning-sms" data-warning-txt="No spam guarantee,No disturb,Promotion News"></div>
                             </div>
-                        </form>
+                      
                         <i class="line-sep"></i>
                     </div>
                 </div><!--end: Login panel -->
@@ -105,7 +105,7 @@ window.fbAsyncInit = function() {
                     <h3 class="rs title-mod">Hello pretty! Welcome to bittye.com</h3>
                     <div class="desc-reg">Sign up for free and get exclusive access to members-only savings, rewards and special promotions from Coupons.com. Enter in an email and a password or sign up with Facebook.</div>
                     <div class="wrap-form-reg clearfix">
-                        <form action="#">
+                       
                             <?php include 'register-form.php';?>
                             <div class="right-connect">
                                 <button class="btn-flat yellow btn-submit-reg" type="submit">Create an account</button>
@@ -119,7 +119,7 @@ window.fbAsyncInit = function() {
                                     <a class="btn-flat gg" href="?login&oauth_provider=twitter">Twitter</a>
                                 </div>
                             </div>
-                        </form>
+                       
                     </div>
                     <p class="rs wrap-link-back">
                         <a id="sys_link_login_panel" href="login.php" class="link-back">

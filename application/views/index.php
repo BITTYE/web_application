@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <?php 
-//$level=$this->session->userdata('userlevel');
-//echo $level;
 ?>
 <html>
 <head>
@@ -77,9 +75,6 @@ function sub()
 <script src="<?php echo base_url();?>js/jquery-1.10.2.js"></script>
 <script src="<?php echo base_url();?>js/date.js"></script>
 <script type="text/javascript">
-
- $(document).ready(function (){
- });
   $(function() {
      $("#date").datepicker({ dateFormat: 'dd-mm-yy',changeMonth: true,
       changeYear: true,yearRange: "-80:+1" });
@@ -97,11 +92,11 @@ function sub()
         </h3>
     </div>
     <div class="block-content list-coupon clearfix">
-        <?php  foreach ($coupens as $data) { 
+        <?php  foreach ($coupons as $data) { 
            
-         $val   =  json_decode($data->coupen_images);
-            $coupenpicname =  array_pop($val);
-            $coupenurl= base_url()."coupenimages/$coupenpicname";
+         $val   =  json_decode($data->coupon_images);
+            $couponpicname =  array_pop($val);
+            $couponurl= base_url()."couponimages/$couponpicname";
              $startdate=$data->startdate;
             $enddate=$data->enddate;
             $date1 = new DateTime("$startdate");
@@ -112,69 +107,19 @@ function sub()
                 <div class="img-thumb-center grid_8">
                     <div class="wrap-img-thumb">
                         <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="<?php echo $coupenurl;?>" alt="$COUPON_TITLE"></a>
+                        <a href="#" class="ver_container"><img src="<?php echo $couponurl;?>" alt="$COUPON_TITLE"></a>
                     </div>
                 </div>
                 <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand"><?php echo $data->coupen_title;?> </div>
-                    <div class="coupon-desc"><?php echo $data->coupen_description;?></div>
+                    <div class="coupon-brand"><?php echo $data->coupon_title;?> </div>
+                    <div class="coupon-desc"><?php echo $data->coupon_description;?></div>
                     <div class="time-left"><?php echo $interval->days;?></div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
             <i class="stick-lbl hot-sale"></i>
         </div>
         <?php } ?>
-        <!--<div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="<?php //echo base_url();?>images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-       
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="<?php //echo base_url();?>images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-       
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="<?php// echo base_url();?>images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>-->
-      
+           
     </div>
 </div>
 <!--end block: New Coupons-->
