@@ -8,12 +8,12 @@ class home extends CI_Controller{
         parent::__construct();
         session_start();
         $this->load->model('homemodel');
-        $this->load->model('couponmodel');
+        //$this->load->model('couponmodel');
     }
     public function index()
     {
-        $data['category']=$this->couponmodel->getcategories();
-        $data['sellers']=$this->couponmodel->getallsellers();
+       // $data['category']=$this->couponmodel->getcategories();
+       // $data['sellers']=$this->couponmodel->getallsellers();
       //  print_r($data);
         $this->load->view('index',$data);
     }
@@ -72,7 +72,7 @@ class home extends CI_Controller{
     }
     public function addcoupons()
     {
-       $id= $this->couponmodel->addcoupontodb();
+       //$id= $this->couponmodel->addcoupontodb();
       /* print_r('hai');
        print_r($id);*/
        echo $id;

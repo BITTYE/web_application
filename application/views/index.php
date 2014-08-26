@@ -48,7 +48,7 @@ echo $level;
 
 </head>
 <body class=""><!--<div class="alert_w_p_u"></div>-->
-    <!--test-->
+<!--test-->
 <div class="container-page">
 <div class="mp-pusher" id="mp-pusher">
 <?php include 'header.php';?>
@@ -76,11 +76,24 @@ echo $level;
                         <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
                     </div>
                 </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
+                <div class="grid_4">
+                    <div class="coupon-price">$2.00 Off</div>
                     <div class="coupon-brand">Wallmart</div>
                     <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
+                    <div class="time-left">9 days 4 hours left</div>
+                </div>
+                <div class="grid_8">
+                    <div class="likes">
+                        <span class="fa fa-heart-o"></span>
+                        <span class="value">85</span>
+                    </div>
+                    <div class="grabs">
+                        <span class="fa fa-flag"></span>
+                        <span class="value">23</span>
+                    </div>
+                    <div class="grabs"></div>
+                </div>
+                <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
             </div>
             <i class="stick-lbl hot-sale"></i>
         </div>
@@ -93,11 +106,13 @@ echo $level;
                         <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
                     </div>
                 </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
+                <div class="grid_4">
+                    <div class="coupon-price">$2.00 Off</div>
                     <div class="coupon-brand">Wallmart</div>
                     <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
+                    <div class="time-left">9 days 4 hours left</div>
+                </div>
+                <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
             </div>
             <i class="stick-lbl hot-sale"></i>
         </div>
@@ -110,11 +125,13 @@ echo $level;
                         <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
                     </div>
                 </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
+                <div class="grid_4">
+                    <div class="coupon-price">$2.00 Off</div>
                     <div class="coupon-brand">Wallmart</div>
                     <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
+                    <div class="time-left">9 days 4 hours left</div>
+                </div>
+                <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
             </div>
             <i class="stick-lbl hot-sale"></i>
         </div>
@@ -127,11 +144,13 @@ echo $level;
                         <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
                     </div>
                 </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
+                <div class="grid_4">
+                    <div class="coupon-price">$2.00 Off</div>
                     <div class="coupon-brand">Wallmart</div>
                     <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
+                    <div class="time-left">9 days 4 hours left</div>
+                </div>
+                <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
             </div>
             <i class="stick-lbl hot-sale"></i>
         </div>
@@ -140,321 +159,357 @@ echo $level;
 </div>
 <!--end block: New Coupons-->
 <div class="mod-grp-coupon block clearfix">
-    <div class="grid_12">
-        <h3 class="title-block has-link">
-            Featured Coupons
-            <a href="#" class="link-right">See all <i class="pick-right"></i></a>
-        </h3>
+<div class="grid_12">
+    <h3 class="title-block has-link">
+        Featured Coupons
+        <a href="#" class="link-right">See all <i class="pick-right"></i></a>
+    </h3>
+</div>
+<div class="block-content list-coupon clearfix">
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
     </div>
-    <div class="block-content list-coupon clearfix">
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
         </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
         </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
-        <div class="coupon-item grid_12">
-            <div class="coupon-content">
-                <div class="img-thumb-center grid_8">
-                    <div class="wrap-img-thumb">
-                        <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
-                    </div>
-                </div>
-                <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
-                    <div class="coupon-brand">Wallmart</div>
-                    <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
-                    <div class="time-left">9 days 4 hours left</div></div>
-                <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
-            </div>
-            <i class="stick-lbl hot-sale"></i>
-        </div>
-        <!--end: .coupon-item -->
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
     </div>
-    <a class="grid_6 btn btn-orange btn-load-more" href="#">Load more coupon</a>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+<div class="coupon-item grid_12">
+    <div class="coupon-content">
+        <div class="img-thumb-center grid_8">
+            <div class="wrap-img-thumb">
+                <span class="ver_hold"></span>
+                <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="coupon-price">$2.00 Off</div>
+            <div class="coupon-brand">Wallmart</div>
+            <div class="coupon-desc">Find Parts for All Major Brands at Sears PartsDirect</div>
+            <div class="time-left">9 days 4 hours left</div>
+        </div>
+        <a class="btn btn-blue btn-take-coupon grid_4" href="#"><span class="fa fa-flag"></span>Grab it!</a>
+    </div>
+    <i class="stick-lbl hot-sale"></i>
+</div>
+<!--end: .coupon-item -->
+</div>
+<a class="grid_6 btn btn-orange btn-load-more" href="#">Load more coupon</a>
 </div>
 <!--end block: Featured Coupons-->
 <div class="mod-brands block clearfix">
