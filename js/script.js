@@ -46,6 +46,10 @@ $(function () {
             'float': 'right',
             'display': 'block'
         });
+             /*  jQuery("#sys_head_addcoupon").css({
+            'float': 'right',
+            'display': 'block'
+        });*/
 		/*
 		jQuery(".pop-login").css({
 			position: "relative"
@@ -104,7 +108,7 @@ $(function () {
      $("#sys_head_addcoupon").on("click",function(){
         $("#sys_pop_addcoupon").fadeToggle(300);
     });
-    /*  code for coupon register div pop */ 
+    
     
     $("#sys_link_reg_panel").on("click",function(){
         $("#sys_pop_login").find(".transport-viewer").animate({"margin-left": "-720px"},500);
@@ -132,9 +136,9 @@ $(function () {
     $("#sys_close_addcoupon_popup").on("click",function(){
         $("#sys_head_addcoupon").trigger("click");
     });
-    $("#sys_btn_submit").on("click",function(){
+  /*  $("#sys_btn_submit").on("click",function(){
         $("#sys_head_addcoupon").trigger("click");
-    });
+    });*/
     
     $("#sys_selected_val").on("click",function(e){
         $("#sys_list_dd_cate").fadeToggle(300);

@@ -98,4 +98,8 @@
             </div>
         </div>
     </div>
+    
+     <link rel="stylesheet" href="<?php echo base_url();?>css/Date.css">
+<script src="<?php echo base_url();?>js/jquery-1.10.2.js"></script>
+<script src="<?php echo base_url();?>js/Date.js"></script>
 </footer>

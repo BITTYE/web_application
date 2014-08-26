@@ -1,27 +1,5 @@
 <script>
-function sub()
-{
-   var sys_email=document.getElementById('sys_mail').value;
-   var sys_pass=document.getElementById('pass').value;
 
-   $.ajax({
-      url:'<?php echo base_url();?>home/validate',
-      type:'post',
-      async:false,
-      data:{sys_email:sys_email,
-           sys_pass:sys_pass},
-      success:function(data){
-           
-        if(data=="success")
-        {
-           // location.href='<?php// echo base_url();?>home';
-        }/*else {
-              location.href='<?php// echo base_url();?>home/homeview';
-        }*/
-                 location.href='<?php echo base_url();?>home';
-    },
-   });
-}
 </script>    
 <div class="left-form">
     <form method="post">
@@ -39,7 +17,7 @@ function sub()
        
                
         <div class="wrap-login-btn">
-            <button class="btn-flat gr btn-submit-reg" type="button" onclick="sub();">Login</button>
+            <button class="btn-flat gr btn-submit-reg" type="button" onclick="return sub();">Login</button>
             <div class="sep-connect">
                 <span>Or</span>
             </div>

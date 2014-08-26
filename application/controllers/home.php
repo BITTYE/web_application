@@ -8,12 +8,13 @@ class home extends CI_Controller{
         parent::__construct();
         session_start();
         $this->load->model('homemodel');
-        //$this->load->model('couponmodel');
+        $this->load->model('couponmodel');
     }
     public function index()
     {
-       // $data['category']=$this->couponmodel->getcategories();
-       // $data['sellers']=$this->couponmodel->getallsellers();
+        $data['category']=$this->couponmodel->getcategories();
+        $data['sellers']=$this->couponmodel->getallsellers();
+        $data['coupens']=$this->couponmodel->getallcoupons();
       //  print_r($data);
         $this->load->view('index',$data);
     }
@@ -45,9 +46,17 @@ class home extends CI_Controller{
     {
         $this->load->view('coupon-code');
     }
-    public function brand_list()
+    public function brandlist()
     {
         $this->load->view('brand_list');
+    }
+    public function blog()
+    {
+        $this->load->view('blog');
+    }
+    public function mycoupon()
+    {
+        $this->load->view('my_coupon');
     }
     public function register()
     {
@@ -72,10 +81,11 @@ class home extends CI_Controller{
     }
     public function addcoupons()
     {
-       //$id= $this->couponmodel->addcoupontodb();
+         $id= $this->couponmodel->addcoupontodb();
       /* print_r('hai');
        print_r($id);*/
-       echo $id;
+      // echo $id;
+      redirect('home');
     }
 }
 ?>
