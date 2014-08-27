@@ -46,6 +46,7 @@ if ($users!="") {
              array_push($attachmentarray, "image_".$id.".png");
                    
              $attachmentjsonarray=json_encode($attachmentarray);
+             $this->db->query("update buyer set profile_pic='".$attachmentjsonarray."' where id='".$id."'");
            redirect('home');
         }
 

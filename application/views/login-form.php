@@ -2,7 +2,7 @@
 
 </script>    
 <div class="left-form">
-    <form method="post">
+    <form >
         <label class="wrap-txt" >
             <input class="input-txt" id="sys_mail" name="sys_mail" type="email" placeholder="you@mail.com"/>
         </label>
@@ -14,8 +14,6 @@
             <i class="icon iUncheck"></i>
             <a class="lost-pass" href="#">Forgot password ?</a>
         </label>
-       
-               
         <div class="wrap-login-btn">
             <button class="btn-flat gr btn-submit-reg" type="button" onclick="return sub();">Login</button>
             <div class="sep-connect">

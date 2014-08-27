@@ -2,21 +2,21 @@
     <div class="mp-level">
         <h2>Menu</h2>
         <ul>
-            <li><a href="index-2.html">Home</a></li>
-            <li><a href="coupon.html">Coupons</a></li>
+            <li><a href="<?php echo base_url();?>home/homeview">Home</a></li>
+            <li><a href="<?php echo base_url();?>home/coupon">Coupons</a></li>
             <li class="has-sub">
-                <a href="coupon-code.html">Coupons Code</a>
+                <a href="<?php echo base_url();?>home/couponcode">Coupons Code</a>
                 <div class="mp-level">
                     <h2>Coupons Code</h2>
                     <a class="mp-back" href="#">back</a>
                     <ul>
-                        <li><a href="coupon-code.html">Coupons Code 1</a></li>
+                        <li><a href="<?php echo base_url();?>home/couponcode">Coupons Code 1</a></li>
                         <li><a href="coupon-code-2.html">Coupons Code 2</a></li>
                     </ul>
                 </div>
             </li>
             <li class="has-sub">
-                <a href="brand-list.html">Brands</a>
+                <a href="<?php echo base_url();?>home/brandlist">Brands</a>
                 <div class="mp-level">
                     <h2>Brands</h2>
                     <a class="mp-back" href="#">back</a>
@@ -29,8 +29,8 @@
                     </ul>
                 </div>
             </li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="my-coupon.html">My coupons(12)</a></li>
+            <li><a href="<?php echo base_url();?>home/blog">Blog</a></li>
+            <li><a href="<?php echo base_url();?>home/mycoupon">My coupons(12)</a></li>
             <li><a href="login.php">Login</a></li>
         </ul>
     </div>

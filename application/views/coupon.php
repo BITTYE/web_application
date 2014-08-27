@@ -43,7 +43,7 @@
       data:{sys_email:sys_email,
            sys_pass:sys_pass},
       success:function(data){
-            location.href='<?php echo base_url();?>home/coupon';
+            location.href='<?php echo base_url();?>home/coupons';
     },
    });
 }
@@ -74,7 +74,7 @@
                                         <a href="<?php echo base_url();?>home/homeview">Home</a>
                                     </li>
                                     <li class="active">
-                                        <a href="<?php echo base_url();?>home/coupon">Coupons</a>
+                                        <a href="<?php echo base_url();?>home/coupons">Coupons</a>
                                     </li>
                                     <li class="has-sub">
                                         <a href="<?php echo base_url();?>home/couponcode">Coupons Code</a>
@@ -95,7 +95,7 @@
                                     </li>
                                     <li><a href="<?php echo base_url();?>home/blog">Blog</a></li>
                                     <li>
-                                        <a href="my-coupon.html">My coupons</a>
+                                        <a href="<?php echo base_url();?>home/mycoupon">My coupons</a>
                                         <i class="icon iPickRed lbl-count"><span>12</span></i>
                                     </li>
                                 </ul>

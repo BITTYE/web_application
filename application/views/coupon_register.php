@@ -1,28 +1,9 @@
 <?php
 ?>
-  <!-- Date picker link  -->
- <link rel="stylesheet" href="<?php echo base_url();?>css/Date.css">
-<script src="<?php echo base_url();?>js/jquery-1.10.2.js"></script>
-<script src="<?php echo base_url();?>js/Date.js"></script>
 <script type="text/javascript">
  function postcoupon()
   {
      var flag=true;    
-      
-   /*   var coupon_title=document.getElementById('coupon_title').value;
-      var categoryid=document.getElementById('categoryid').value;
-      var sellerid=document.getElementById('sellerid').value;
-      var coupon_image=document.getElementById('coupon_image').value;
-      var coupon_cost=document.getElementById('coupon_cost').value;
-      var coupon_description=document.getElementById('coupon_description').value;*/
-      
-    /*  if(document.getElementById('category').value==''){
-          
-          flag=false;
-      }
-       if(document.getElementById('seller').value==''){
-          flag=false;
-      }*/
       if(document.getElementById('coupon_title').value==''){
           flag=false;
       }
@@ -33,34 +14,21 @@
           flag=false;
       }
     if(flag==false){
-       // alert('please provide input');
        return false;
     }else{
          $("#sys_btn_submit").on("click",function(){
         $("#sys_head_addcoupon").trigger("click");
     });
     return true;
-     /* $.ajax({
-         url:'<?php //echo base_url();?>home/addcoupons',
-         type:'post',
-         async:false,
-         data:{coupon_title:coupon_title,
-               categoryid:categoryid,
-               sellerid:sellerid,
-               coupon_image:coupon_image,
-              coupon_cost:coupon_cost,
-             coupon_description:coupon_description,
-         },
-         success:function(data){
-              
-         },
-      });*/
      }
   }
  </script>
- 
+  
 <div class="left-form">
     <form action="<?php echo base_url();?>home/addcoupons" method="post" enctype='multipart/form-data'>
+         <label class="wrap-txt" >
+        <input class="input-txt" id="coupon_title" name="coupon_title" type="text" placeholder="coupon title"/>
+    </label>
         <label class="wrap-txt " >
             <select class="dropdown-cate grid_frame" name="categoryid" id="categoryid">
                  <option value="">-- please select category --</option>
@@ -77,17 +45,24 @@
                  <?php } ?>
             </select>
         </label>
-    <label class="wrap-txt" >
-        <input class="input-txt" id="coupon_title" name="coupon_title" type="text" placeholder="coupon title"/>
-    </label>
-    <label class="wrap-txt grid_6 make-right" >
+   
+    <label class="wrap-txt grid_6 make-left" >
         <input type="file" id="coupon_image" name="coupon_image"/>
     </label> 
     <label class="wrap-txt" >
-        <input class="input-txt" name="coupon_startdate" id="coupon_startdate" type="date" placeholder="coupon start date"/>
+         <textarea class="input-txt" id="sys_address" name="sys_address"  placeholder="coupon address"></textarea>
+    </label>
+     <label class="wrap-txt grid_6 " >
+        <input class="input-txt" name="sys_couponcity" id="sys_couponcity" type="text" placeholder="coupon city"/>
+    </label>
+     <label class="wrap-txt grid_6 make-right" >
+        <input class="input-txt" name="sys_pincode" id="sys_pincode" type="text" placeholder="Pincode"/>
     </label>
     <label class="wrap-txt" >
-        <input class="input-txt" name="coupon_enddate" id="coupon_enddate" type="date" placeholder="coupon end date"/>
+        <input class="input-txt" name="coupon_startdate" id="coupon_startdate" type="text" placeholder="coupon start date"/>
+    </label>
+    <label class="wrap-txt" >
+        <input class="input-txt" name="coupon_enddate" id="coupon_enddate" type="text" placeholder="coupon end date"/>
     </label>
      <label class="wrap-txt" >
         <input class="input-txt" id="coupon_cost" name="coupon_cost" type="text" placeholder="coupon price amount"/>
@@ -98,4 +73,5 @@
        <button class="btn-flat gr btn-submit-reg" type="submit" onclick="return postcoupon();">Submit</button>
  </form>
 </div>
-   
+ 
+

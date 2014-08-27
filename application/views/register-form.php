@@ -1,6 +1,4 @@
- <link rel="stylesheet" href="<?php echo base_url();?>css/Date.css">
-<script src="<?php echo base_url();?>js/jquery-1.10.2.js"></script>
-<script src="<?php echo base_url();?>js/Date.js"></script>
+<?php ?>
 <script type="text/javascript">
 $(document).ready(function (){
      $("#sys_dateofbirth").datepicker({ dateFormat: 'dd-mm-yy',changeMonth: true,
@@ -77,12 +75,22 @@ $(document).ready(function (){
     <label class="wrap-txt grid_6 make-right" >
         <input class="input-txt" id="sys_pass_conf" type="password" placeholder="confirm password"/>
     </label>
-    <label class="wrap-txt grid_6 " >
-        <input class="input-txt" name="sys_buyercity" id="sys_buyercity" type="text" placeholder="Buyer city"/>
+     <label class="wrap-txt grid_6 " >
+        <input class="input-txt" name="sys_occupation" id="sys_occupation" type="text" placeholder="Buyer Occupation"/>
     </label>
      <label class="wrap-txt grid_6 make-right" >
         <input class="input-txt" name="sys_dateofbirth" id="sys_dateofbirth" type="text" placeholder="Birthdate"/>
     </label>
+     <label class="wrap-txt" >
+         <textarea class="input-txt" id="sys_address" name="sys_address"  placeholder="buyer address"></textarea>
+    </label>
+     <label class="wrap-txt grid_6 " >
+        <input class="input-txt" name="sys_buyercity" id="sys_buyercity" type="text" placeholder="Buyer city"/>
+    </label>
+     <label class="wrap-txt grid_6 make-right" >
+        <input class="input-txt" name="sys_pincode" id="sys_pincode" type="text" placeholder="Pincode"/>
+    </label>
+   
     <label class="wrap-check grid_12 make-left" for="sys_chk_news">
         <input id="sys_chk_news" class="input-chk make-left" type="checkbox"/> Send me the weekly Couponday.com’s offers.
         <i class="icon iUncheck"></i>

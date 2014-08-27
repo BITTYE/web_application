@@ -5,15 +5,15 @@
     <title>Coupon Detail</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="css/font.css"/>
-    <link rel="stylesheet" href="css/font-awesome.css"/>
-    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="<?php echo base_url();?>css/font.css"/>
+    <link rel="stylesheet" href="<?php echo base_url();?>css/font-awesome.css"/>
+    <link rel="stylesheet" href="<?php echo base_url();?>css/normalize.css"/>
     <!--css plugin-->
-    <link rel="stylesheet" href="css/flexslider.css"/>
-    <link rel="stylesheet" href="css/jquery.nouislider.css"/>
-    <link rel="stylesheet" href="css/jquery.popupcommon.css"/>
+    <link rel="stylesheet" href="<?php echo base_url();?>css/flexslider.css"/>
+    <link rel="stylesheet" href="<?php echo base_url();?>css/jquery.nouislider.css"/>
+    <link rel="stylesheet" href="<?php echo base_url();?>css/jquery.popupcommon.css"/>
 
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="<?php echo base_url();?>css/style.css"/>
     
     
     <!--[if IE 9]>
@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="../css/ie8.css"/>
     <![endif]-->
 
-    <link rel="stylesheet" href="css/res-menu.css"/>
-    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="<?php echo base_url();?>css/res-menu.css"/>
+    <link rel="stylesheet" href="<?php echo base_url();?>css/responsive.css"/>
     <!--[if lte IE 8]>
         <script type="text/javascript" src="../js/html5.js"></script>
     <![endif]-->
@@ -37,6 +37,15 @@
 
         ga('create', 'UA-53961033-1', 'auto');
         ga('send', 'pageview');
+        
+        function like()
+        {
+            alert('like');
+        }
+        function unlike()
+        {
+            alert('unlike');
+        }
     </script>
 
 </head>
@@ -59,38 +68,49 @@
             <div class="container_grid">
                 <div class="mod-breadcrumb clearfix">
                     <div class="grid_12">
-                        <a href="#">Home</a>
+                        <a href="<?php echo base_url();?>home">Home</a>
                         <span>></span>
-                        <a href="#">Coupons</a>
+                        <a href="<?php echo base_url();?>home/coupons">Coupons</a>
                         <span>></span>
                         <a href="#">Lindt - Save 10% off</a>
                     </div>
                 </div><!--end: .mod-breadcrumb -->
                 <div class="mod-coupon-detail clearfix">
+                       <?php  foreach ($coupons as $data) { 
+           $couponid=$data->id;
+         $val   =  json_decode($data->coupon_images);
+            $couponpicname =  array_pop($val);
+            $couponurl= base_url()."couponimages/$couponpicname";
+             $startdate=$data->startdate;
+            $enddate=$data->enddate;
+            $date1 = new DateTime("$startdate");
+           $date2 = new DateTime("$enddate");
+           $interval = $date1->diff($date2);?>
                     <div class="grid_4">
                         <div class="wrap-thumb">
                             <div class="img-thumb-center">
                                 <div class="wrap-img-thumb">
                                     <span class="ver_hold"></span>
-                                    <a href="#" class="ver_container"><img src="images/ex/03-01.jpg" alt="$COUPON_TITLE"></a>
+                                    <a href="#" class="ver_container"><img src="<?php echo $couponurl;?>" alt="$COUPON_TITLE"></a>
                                 </div>
                             </div>
                             <i class="stick-lbl hot-sale"></i>
                         </div>
                     </div>
+        
                     <div class="grid_5">
                         <div class="save-price">Save 10% Off</div>
-                        <a href="#" class="brand-name">Lindt</a>
-                        <div class="coupon-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vestibulum interdum ipsum, eu gravida massa <a href="#">cursus id</a>. Pellentesque feugiat ante eu scelerisque porta. In quis velit ligula. Cum sociis natoque <a href="#">penatibus et</a> magnis dis parturient montes, nascetur ridiculus mus. Donec ac dignissim nulla.</div>
+                        <a href="#" class="brand-name"><?php echo $data->coupon_title;?></a>
+                        <div class="coupon-desc"><?php echo $data->coupon_description;?></div>
                         <div class="wrap-btn clearfix">
-                            <div class="day-left">9 days 4 hours left</div>
+                            <div class="day-left"><?php echo $interval->days;?> days left</div>
                             <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
                         </div>
                         <div class="wrap-action clearfix">
                             <div class="left-vote">
                                 <span class="lbl-work">100% work</span>
-                                <span class="lbl-vote">12 <i class="icon iAddVote"></i></span>
-                                <span class="lbl-vote">2 <i class="icon iSubVote"></i></span>
+                                <span class="lbl-vote">12 <i class="icon iAddVote" onclick="like();"></i></span>
+                                <span class="lbl-vote">2 <i class="icon iSubVote" onclick="unlike();"></i></span>
                             </div>
                             <div class="right-social">
                                 Share now
@@ -110,9 +130,10 @@
                             <a class="btn btn-gray type-tag" href="#">Chocolate</a>
                         </div>
                     </div>
+                    <?php } ?>
                     <div class="grid_3">
                         <div class="brand-info ta-c">
-                            <div class="brand-logo"><img src="images/ex/03-03.jpg" alt="$NAME"/></div>
+                            <div class="brand-logo"><img src="<?php echo base_url();?>images/ex/03-03.jpg" alt="$NAME"/></div>
                             <span class="star-rate"><span style="width: 91%"></span></span>
                             <div class="rated-number">289.876 Followers</div>
                             <div class="brand-desc ta-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vestibulum interdum ipsum, eu gravida massa cursus id. Pellentesque feugiat ante eu scelerisque porta. In quis velit ligula. </div>
@@ -132,7 +153,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$2.00 Off</div>
@@ -148,7 +169,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">Save $1.50 on two</div>
@@ -164,7 +185,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_03.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_03.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$5.00 Off</div>
@@ -180,7 +201,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$7.00 Off</div>
@@ -196,7 +217,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$12.00 Off</div>
@@ -211,7 +232,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_03.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_03.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$17.50 off</div>
@@ -226,7 +247,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$3.00 Off</div>
@@ -241,7 +262,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$7.00 Off</div>
@@ -256,7 +277,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_04.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$2.00 Off</div>
@@ -271,7 +292,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_01.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$11.50 off</div>
@@ -286,7 +307,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_03.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_03.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$12.00 Off</div>
@@ -301,7 +322,7 @@
                                 <div class="img-thumb-center">
                                     <div class="wrap-img-thumb">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_02.jpg" alt="$COUPON_TITLE"></a>
                                     </div>
                                 </div>
                                 <div class="coupon-price">$4.5 Off</div>
@@ -342,7 +363,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
@@ -352,7 +373,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
@@ -362,7 +383,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
@@ -372,7 +393,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
@@ -382,7 +403,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
@@ -392,7 +413,7 @@
                                 <div class="brand-logo">
                                     <div class="wrap-img-logo">
                                         <span class="ver_hold"></span>
-                                        <a href="#" class="ver_container"><img src="images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
+                                        <a href="#" class="ver_container"><img src="<?php echo base_url();?>images/ex/01_07.jpg" alt="$BRAND_TITLE"></a>
                                     </div>
                                 </div>
                             </div>
@@ -407,7 +428,7 @@
                     <div class="container_grid clearfix">
                         <div class="grid_3">
                             <div class="company-info">
-                                <img src="images/logo-gray.png" alt="bittye"/>
+                                <img src="<?php echo base_url();?>images/logo-gray.png" alt="bittye"/>
                                 <p class="rs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</p>
                                 <p class="rs">
                                     1200 Balh Blah Avenue <br />
@@ -443,7 +464,7 @@
                                      <div class="block-content">
                                     <div class="wrap-video" id="sys_wrap_video">
                                         <div class="lightbox-video">
-                                                <a class="html5lightbox" href="http://player.vimeo.com/video/36932496" title=""><i class="btn-play"></i><img src="images/video-img.png" alt=""></a>
+                                                <a class="html5lightbox" href="http://player.vimeo.com/video/36932496" title=""><i class="btn-play"></i><img src="<?php echo base_url();?>images/video-img.png" alt=""></a>
                                             </div>
                                     </div>
                                 </div>
@@ -456,13 +477,13 @@
                                 <div class="block-content">
                                     <div class="entry-item flex">
                                         <a class="thumb-left" href="#">
-                                            <img src="images/ex/04-14.jpg" alt="$TITLE"/>
+                                            <img src="<?php echo base_url();?>images/ex/04-14.jpg" alt="$TITLE"/>
                                         </a>
                                         <div class="flex-body"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing eli</a></div>
                                     </div>
                                     <div class="entry-item flex">
                                         <a class="thumb-left" href="#">
-                                            <img src="images/ex/04-14.jpg" alt="$TITLE"/>
+                                            <img src="<?php echo base_url();?>images/ex/04-14.jpg" alt="$TITLE"/>
                                         </a>
                                         <div class="flex-body"><a href="#">Ut wisi enim ad minim veniam, quis nostrud</a></div>
                                     </div>
@@ -492,18 +513,18 @@
     </div>
 </div>
 
-<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="js/jquery.nouislider.js"></script>
-<script type="text/javascript" src="js/jquery.popupcommon.js"></script>
-<script type="text/javascript" src="js/html5lightbox.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery.nouislider.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery.popupcommon.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/html5lightbox.js"></script>
 
 <!--//js for responsive menu-->
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
-<script type="text/javascript" src="js/classie.js"></script>
-<script type="text/javascript" src="js/mlpushmenu.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/modernizr.custom.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/classie.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/mlpushmenu.js"></script>
 
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/script.js"></script>
 
 <!--[if lte IE 9]>
 <script type="text/javascript" src="../js/jquery.placeholder.js"></script>

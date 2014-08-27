@@ -42,11 +42,24 @@
         ga('create', 'UA-53961033-1', 'auto');
         ga('send', 'pageview');
 function sub()
-{
+{ var flag=true;
    var sys_email=document.getElementById('sys_mail').value;
    var sys_pass=document.getElementById('pass').value;
-
-   $.ajax({
+     if(document.getElementById('sys_mail').value=='')
+         { 
+          document.getElementById('mailerror').inner    
+             flag=false;
+         }
+       if(document.getElementById('pass').value=='')
+         {
+             flag=false;
+         }
+         if(flag==false)
+             {
+         return false;
+             }
+             else { 
+            $.ajax({
       url:'<?php echo base_url();?>home/validate',
       type:'post',
       async:false,
@@ -55,7 +68,21 @@ function sub()
       success:function(data){
             location.href='<?php echo base_url();?>home';
     },
-   });
+   });     
+            $("#sys_pop_login").fadeOut();
+             
+                 return true;
+             }
+  /* $.ajax({
+      url:'<?php// echo base_url();?>home/validate',
+      type:'post',
+      async:false,
+      data:{sys_email:sys_email,
+           sys_pass:sys_pass},
+      success:function(data){
+            location.href='<?php //echo base_url();?>home';
+    },
+   });*/
 }
     </script>
 
@@ -93,7 +120,7 @@ function sub()
     </div>
     <div class="block-content list-coupon clearfix">
         <?php  foreach ($coupons as $data) { 
-           
+           $couponid=$data->id;
          $val   =  json_decode($data->coupon_images);
             $couponpicname =  array_pop($val);
             $couponurl= base_url()."couponimages/$couponpicname";
@@ -107,13 +134,13 @@ function sub()
                 <div class="img-thumb-center grid_8">
                     <div class="wrap-img-thumb">
                         <span class="ver_hold"></span>
-                        <a href="#" class="ver_container"><img src="<?php echo $couponurl;?>" alt="$COUPON_TITLE"></a>
+                        <a href="<?php echo base_url();?>home/coupondetail/<?php echo $couponid;?>" class="ver_container"><img src="<?php echo $couponurl;?>" alt="$COUPON_TITLE"></a>
                     </div>
                 </div>
                 <div class="grid_4"><div class="coupon-price">$2.00 Off</div>
                     <div class="coupon-brand"><?php echo $data->coupon_title;?> </div>
                     <div class="coupon-desc"><?php echo $data->coupon_description;?></div>
-                    <div class="time-left"><?php echo $interval->days;?></div></div>
+                    <div class="time-left"><?php echo $interval->days;?> days left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
             <i class="stick-lbl hot-sale"></i>
@@ -533,9 +560,16 @@ function sub()
 <script type="text/javascript" src="<?php echo base_url();?>js/modernizr.custom.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/classie.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/mlpushmenu.js"></script>
+ <link rel="stylesheet" href="<?php echo base_url();?>css/date.css"/>
 
+<script src="<?php echo base_url();?>js/date.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/script.js"></script>
-
+<script>
+    $('document').ready(function (){
+        $("#sys_dateofbirth,#coupon_startdate,#coupon_enddate").datepicker({ dateFormat: 'dd-mm-yy',changeMonth: true,
+      changeYear: true,yearRange: "-80:+1" });
+    });
+</script>
 <!--[if lte IE 9]>
 <script type="text/javascript" src="../js/jquery.placeholder.js"></script>
 <script type="text/javascript" src="../js/create.placeholder.js"></script>

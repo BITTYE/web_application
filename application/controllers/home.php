@@ -19,7 +19,8 @@ class home extends CI_Controller{
         $this->load->view('index',$data);
     }
     public function validate(){
-        $email=$this->input->post('sys_email');
+       // echo 1;
+     $email=$this->input->post('sys_email');
         $pass=$this->input->post('sys_pass');
         $data = $this->homemodel->Validateadmin($email,$pass);
         if($data){
@@ -38,9 +39,14 @@ class home extends CI_Controller{
        // unset($_COOKIE['userlevel']);
          $this->load->view('index-2');
     }
-    public function coupon()
+    public function coupons()
     {
       $this->load->view('coupon');
+    }
+    public function coupondetail($couponid)
+    {
+        $data['coupons']=$this->couponmodel->geteachcoupon($couponid);
+        $this->load->view('coupon-detail',$data);
     }
     public function couponcode()
     {

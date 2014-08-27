@@ -12,16 +12,26 @@ class homemodel extends CI_Model{
         $token=$this->input->post('userid');
         $firstname=$this->input->post('firstname');
         $lastname=$this->input->post('lastname');
-        $profilepic=$this->input->post('image');
+        $profileimageurl=$this->input->post('image');
+        
        $query = mysql_query("SELECT * FROM buyer WHERE twitter_token = '$token' ") or die(mysql_error());
         $result = mysql_fetch_array($query);
         if (!empty($result)) {
          return 2;
         } 
         else {
-        $this->db->query("insert into buyer values('','".$firstname."','".$lastname."','".$displayname."','','','','".$profilepic."','','','','','','','',
+        $this->db->query("insert into buyer values('','".$firstname."','".$lastname."','".$displayname."','','','','','','','','','','','',
             '".$token."','','','','','')");
         $id=$this->db->insert_id();
+        $profile_pic=  file_get_contents($profileimageurl);           
+            $attachmentarray = array();
+           file_put_contents("./profileimage/image_".$id.".png", $profile_pic);
+          array_push($attachmentarray, "image_".$id.".png");
+                   
+             $attachmentjsonarray=json_encode($attachmentarray);
+             
+             $this->db->query("update buyer set profile_pic='".$attachmentjsonarray."' where id='".$id."'");
+        
         return $id;
         }
     }
@@ -44,14 +54,21 @@ class homemodel extends CI_Model{
         $sys_email=$this->input->post('sys_email');
         $mobile_num=$this->input->post('mobile_num');
         $sys_pass=$this->input->post('sys_pass');
+        $sys_occupation=$this->input->post('sys_occupation');
+        $sys_address=$this->input->post('sys_address');
+        $sys_city=$this->input->post('sys_buyercity');
+        $sys_pincode=$this->input->post('sys_pincode');
         $sys_buyercity=$this->input->post('sys_buyercity');
-         $sys_dateofbirth=$this->input->post('sys_dateofbirth');
+         $sys_dateofbirth=date('Y-m-d',  strtotime($this->input->post('sys_dateofbirth')));
         $sys_buyercity=$this->input->post('sys_buyercity');
          $gender=$this->input->post('gender');
        
+         date_default_timezone_set('Asia/Calcutta');
+      $registerdate = date('Y-m-d');
+      
         $this->db->query("insert into buyer values('','".$first_name."','".$last_name."','".$displayname."','".$gender."',
-            '".$mobile_num."','".$sys_pass."','','','".$sys_buyercity."','','','','','',
-            '','','','','','')");
+            '".$mobile_num."','".$sys_pass."','','".$sys_address."','".$sys_buyercity."','".$sys_pincode."','".$sys_occupation."','".$sys_dateofbirth."','".$sys_email."','',
+            '','','".$registerdate."','','','1')");
         $id=$this->db->insert_id();
          $name="image"."_$id";
          $document="";
@@ -68,8 +85,6 @@ class homemodel extends CI_Model{
                   $attachmentjsonarray=json_encode($attachmentarray);
                   
              $this->db->query("update buyer set profile_pic='".$attachmentjsonarray."' where id='".$id."'");
-        
-        
     }
 }
 ?>

@@ -51,7 +51,7 @@
                                         <a href="<?php echo base_url();?>home/homeview">Home</a>
                                     </li>
                                     <li>
-                                        <a href="<?php echo base_url();?>home/coupon">Coupons</a>
+                                        <a href="<?php echo base_url();?>home/coupons">Coupons</a>
                                     </li>
                                     <li class="has-sub">
                                         <a href="<?php echo base_url();?>home/couponcode">Coupons Code</a>

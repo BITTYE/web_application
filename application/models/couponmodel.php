@@ -20,13 +20,27 @@ class couponmodel extends CI_Model{
         $coupon_title=$this->input->post('coupon_title');
         $categoryid=$this->input->post('categoryid');
         $sellerid=$this->input->post('sellerid');
-      //  $coupon_startdate=$this->input->post('coupon_startdate');
-     //   $coupon_enddate=$this->input->post('coupon_enddate');
+        $couponaddress=$this->input->post('sys_address');
+        $couponcity=$this->input->post('sys_couponcity');
+        $couponpincode=$this->input->post('sys_pincode');
+        $coupon_startdate=date('Y-m-d',  strtotime($this->input->post('coupon_startdate')));
+        $coupon_enddate=date('Y-m-d',  strtotime($this->input->post('coupon_enddate')));
         $coupon_cost=$this->input->post('coupon_cost');
         $coupon_description=$this->input->post('coupon_description');
         
-        $this->db->query("insert into coupons values('','".$sellerid."','".$categoryid."','1','".$coupon_title."',
-             '','','','','".$coupon_cost."','','','','".$coupon_description."','','','','')");
+        $assembledaddress = $couponaddress.'+'.$couponcity.'+'.$zipcode;
+            $assembledaddress = preg_replace('/\s+/', '+', $assembledaddress);
+          
+       $jsondata = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address=".$assembledaddress."&key=AIzaSyDgVYB2iXj2lJdAcQ-27o-8sJZkYlmt5Pk");
+         $jsondata = json_decode($jsondata);
+            $latitude = "";
+            $logitude = "";
+           foreach ($jsondata->results as $result){
+               $latitude=$result->geometry->location->lat;
+                $logitude=$result->geometry->location->lng;
+           }    
+        $this->db->query("insert into coupons values('','".$sellerid."','".$categoryid."','1','".$coupon_title."','',
+             '".$couponaddress."','".$couponcity."','".$couponpincode."','".$latitude."','".$logitude."','".$coupon_startdate."','".$coupon_enddate."','".$coupon_cost."','','','','".$coupon_description."','','','','')");
         $id=$this->db->insert_id();
          $name="image"."_$id";
          $document="";
@@ -48,6 +62,11 @@ class couponmodel extends CI_Model{
     public function getallcoupons()
     {
         $result=$this->db->query("select * from coupons ");
+        return $result->result();
+    }
+    public function geteachcoupon($couponid)
+    {
+        $result=$this->db->query("select * from coupons where id='".$couponid."' ");
         return $result->result();
     }
 }

@@ -53,6 +53,9 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 </script>
 </head></html>
 <?php
+       
     }
+   /*  unset($_SESSION['access_token']);
+        unset($_SESSION['oauth_token_secret']);*/
 }
 ?>
