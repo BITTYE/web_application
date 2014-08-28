@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<?php 
-?>
+<?php?>
 <html>
 <head>
     <title>Home</title>
@@ -60,7 +59,7 @@ function sub()
              }
              else { 
             $.ajax({
-      url:'<?php echo base_url();?>home/validate',
+      url:'<?php echo base_url();?>home/buyervalidate',
       type:'post',
       async:false,
       data:{sys_email:sys_email,
@@ -70,19 +69,8 @@ function sub()
     },
    });     
             $("#sys_pop_login").fadeOut();
-             
                  return true;
              }
-  /* $.ajax({
-      url:'<?php// echo base_url();?>home/validate',
-      type:'post',
-      async:false,
-      data:{sys_email:sys_email,
-           sys_pass:sys_pass},
-      success:function(data){
-            location.href='<?php //echo base_url();?>home';
-    },
-   });*/
 }
     </script>
 
@@ -101,13 +89,6 @@ function sub()
  <link rel="stylesheet" href="<?php echo base_url();?>css/Date.css">
 <script src="<?php echo base_url();?>js/jquery-1.10.2.js"></script>
 <script src="<?php echo base_url();?>js/date.js"></script>
-<script type="text/javascript">
-  $(function() {
-     $("#date").datepicker({ dateFormat: 'dd-mm-yy',changeMonth: true,
-      changeYear: true,yearRange: "-80:+1" });
- });
-</script>
-
 
 <div class="grid_frame page-content">
 <div class="container_grid">
@@ -560,13 +541,13 @@ function sub()
 <script type="text/javascript" src="<?php echo base_url();?>js/modernizr.custom.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/classie.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/mlpushmenu.js"></script>
- <link rel="stylesheet" href="<?php echo base_url();?>css/date.css"/>
+<link rel="stylesheet" href="<?php echo base_url();?>css/date.css"/>
 
 <script src="<?php echo base_url();?>js/date.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>js/script.js"></script>
 <script>
     $('document').ready(function (){
-        $("#sys_dateofbirth,#coupon_startdate,#coupon_enddate").datepicker({ dateFormat: 'dd-mm-yy',changeMonth: true,
+        $("#sys_dateofbirth,#coupon_startdate,#coupon_enddate,#sys_validity").datepicker({ dateFormat: 'dd-mm-yy',changeMonth: true,
       changeYear: true,yearRange: "-80:+1" });
     });
 </script>

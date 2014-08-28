@@ -23,9 +23,11 @@
      }
   }
  </script>
-  
-<div class="left-form">
+<div>
     <form action="<?php echo base_url();?>home/addcoupons" method="post" enctype='multipart/form-data'>
+ <div class="left-form">
+     
+    
          <label class="wrap-txt" >
         <input class="input-txt" id="coupon_title" name="coupon_title" type="text" placeholder="coupon title"/>
     </label>
@@ -45,10 +47,10 @@
                  <?php } ?>
             </select>
         </label>
-   
     <label class="wrap-txt grid_6 make-left" >
-        <input type="file" id="coupon_image" name="coupon_image"/>
+       Upload coupon Pic<input type="file" id="coupon_image" name="coupon_image" />
     </label> 
+    
     <label class="wrap-txt" >
          <textarea class="input-txt" id="sys_address" name="sys_address"  placeholder="coupon address"></textarea>
     </label>
@@ -70,8 +72,28 @@
      <label class="wrap-txt" >
         <input class="input-txt" id="coupon_description" name="coupon_description" type="text" placeholder="coupon description"/>
     </label>
-       <button class="btn-flat gr btn-submit-reg" type="submit" onclick="return postcoupon();">Submit</button>
+      
+</div>
+<div class="left-form">
+    <label class="wrap-txt" >
+         <textarea class="input-txt" id="sys_termscondition" name="sys_termscondition"  placeholder="Terms and Conditions"></textarea>
+    </label>
+    <label class="wrap-txt" >
+         <textarea class="input-txt" id="sys_couponoffer" name="sys_couponoffer"  placeholder="coupon offers"></textarea>
+    </label>
+    <label class="wrap-txt" >
+         <input class="input-txt" id="sys_validity" type="text" name="sys_validity"  placeholder="coupon Utilization validity"></textarea>
+    </label>
+    <label class="wrap-txt" >
+         <textarea class="input-txt" id="sys_recommendation" name="sys_recommendation"  placeholder="coupon Recommendations"></textarea>
+    </label>
+      <button class="btn-flat gr btn-submit-reg" type="submit" onclick="return postcoupon();">Submit</button>
+</div>
+   
  </form>
 </div>
+
+
+
  
 

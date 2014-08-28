@@ -1,9 +1,5 @@
 <?php ?>
 <script type="text/javascript">
-$(document).ready(function (){
-     $("#sys_dateofbirth").datepicker({ dateFormat: 'dd-mm-yy',changeMonth: true,
-      changeYear: true,yearRange: "-80:+1" });
- });
  function registervalidate()
  {
      var flag=true;
@@ -73,10 +69,10 @@ $(document).ready(function (){
         <input class="input-txt" name="sys_pass" id="sys_pass" type="password" placeholder="password"/>
     </label>
     <label class="wrap-txt grid_6 make-right" >
-        <input class="input-txt" id="sys_pass_conf" type="password" placeholder="confirm password"/>
+        <input class="input-txt" id="sys_pass_conf" type="password" placeholder="confirm pwd"/>
     </label>
      <label class="wrap-txt grid_6 " >
-        <input class="input-txt" name="sys_occupation" id="sys_occupation" type="text" placeholder="Buyer Occupation"/>
+        <input class="input-txt" name="sys_occupation" id="sys_occupation" type="text" placeholder="Occupation"/>
     </label>
      <label class="wrap-txt grid_6 make-right" >
         <input class="input-txt" name="sys_dateofbirth" id="sys_dateofbirth" type="text" placeholder="Birthdate"/>

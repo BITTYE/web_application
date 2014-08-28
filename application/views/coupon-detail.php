@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="<?php echo base_url();?>css/jquery.popupcommon.css"/>
 
     <link rel="stylesheet" href="<?php echo base_url();?>css/style.css"/>
-    
-    
     <!--[if IE 9]>
     <link rel="stylesheet" href="../css/ie9.css"/>
     <![endif]-->
@@ -38,13 +36,25 @@
         ga('create', 'UA-53961033-1', 'auto');
         ga('send', 'pageview');
         
-        function like()
+        function like(buyerid,couponid)
         {
-            alert('like');
+          // alert(buyerid);
+          //  alert(couponid);
+        $.ajax({
+           url:'<?php echo base_url();?>home/addlike',
+           type:'post',
+           async:false,
+           data:{buyerid:buyerid,
+                 couponid:couponid},
+           success:function(data){
+               document.getElementById("likevalue"+couponid).innerHTML = data;
+           },
+        });
         }
-        function unlike()
+        function unlike(id)
         {
-            alert('unlike');
+           // alert('unlike');
+           // alert(id);
         }
     </script>
 
@@ -76,7 +86,8 @@
                     </div>
                 </div><!--end: .mod-breadcrumb -->
                 <div class="mod-coupon-detail clearfix">
-                       <?php  foreach ($coupons as $data) { 
+                       <?php  foreach ($coupons as $data) {
+           $id=$this->session->userdata('userlevel');
            $couponid=$data->id;
          $val   =  json_decode($data->coupon_images);
             $couponpicname =  array_pop($val);
@@ -85,7 +96,8 @@
             $enddate=$data->enddate;
             $date1 = new DateTime("$startdate");
            $date2 = new DateTime("$enddate");
-           $interval = $date1->diff($date2);?>
+           $interval = $date1->diff($date2); 
+           $likecount=$data->count;?>
                     <div class="grid_4">
                         <div class="wrap-thumb">
                             <div class="img-thumb-center">
@@ -109,8 +121,8 @@
                         <div class="wrap-action clearfix">
                             <div class="left-vote">
                                 <span class="lbl-work">100% work</span>
-                                <span class="lbl-vote">12 <i class="icon iAddVote" onclick="like();"></i></span>
-                                <span class="lbl-vote">2 <i class="icon iSubVote" onclick="unlike();"></i></span>
+                                <span class="lbl-vote"><span id="likevalue<?php echo $couponid;?>"><?php echo $likecount;?></span><i class="icon iAddVote" onclick="like('<?php echo $id;?>','<?php echo $couponid;?>');"></i></span>
+                                <span class="lbl-vote">2 <i class="icon iSubVote" onclick="unlike('<?php echo $id;?>','<?php echo $couponid;?>');"></i></span>
                             </div>
                             <div class="right-social">
                                 Share now

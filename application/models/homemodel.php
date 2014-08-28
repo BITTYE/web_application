@@ -46,6 +46,17 @@ class homemodel extends CI_Model{
             return 0;
         }
     }
+    public function Validatebuyer($username,$password)
+    {
+        $result=$this->db->query("select * from buyer where email='".$username."' and password='".$password."'");
+        if($result->num_rows > 0)
+        {
+            return $result->row();
+        }
+        else{
+            return 0;
+        }
+    }
     public function registerbuyer()
     {
          $first_name=$this->input->post('first_name');
@@ -86,5 +97,6 @@ class homemodel extends CI_Model{
                   
              $this->db->query("update buyer set profile_pic='".$attachmentjsonarray."' where id='".$id."'");
     }
+   
 }
 ?>

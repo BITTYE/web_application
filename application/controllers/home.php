@@ -18,26 +18,29 @@ class home extends CI_Controller{
       //  print_r($data);
         $this->load->view('index',$data);
     }
-    public function validate(){
-       // echo 1;
+    public function buyervalidate()
+   {
      $email=$this->input->post('sys_email');
         $pass=$this->input->post('sys_pass');
-        $data = $this->homemodel->Validateadmin($email,$pass);
+        $data = $this->homemodel->Validatebuyer($email,$pass);
         if($data){
-           $level=$data->level;
+           $level=$data->id;
           $this->session->set_userdata('userlevel',$level);
-         //  set_cookie('userlevel',$level);
             echo 'success';
         }
         else {
             echo 'failure';
         }
      }
+     public function logout()
+     {
+         $this->session->unset_userdata('userlevel');
+         redirect('home');
+     }
     public function homeview()
     {
-       $this->session->unset_userdata('userlevel');
-       // unset($_COOKIE['userlevel']);
-         $this->load->view('index-2');
+      // $this->session->unset_userdata('userlevel');
+       $this->load->view('index-2');
     }
     public function coupons()
     {
@@ -47,6 +50,11 @@ class home extends CI_Controller{
     {
         $data['coupons']=$this->couponmodel->geteachcoupon($couponid);
         $this->load->view('coupon-detail',$data);
+    }
+    public function addlike()
+    {
+       $id= $this->couponmodel->addbuyerlike();
+       echo $id;
     }
     public function couponcode()
     {

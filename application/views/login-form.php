@@ -1,6 +1,3 @@
-<script>
-
-</script>    
 <div class="left-form">
     <form >
         <label class="wrap-txt" >

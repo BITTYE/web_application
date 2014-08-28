@@ -122,10 +122,15 @@ window.fbAsyncInit = function() {
                     </h1>
                     <?php $level=$this->session->userdata('userlevel'); ?>
                   <?php if($level==1){ ?>
-                     <a id="sys_head_addcoupon" class="btn btn-green type-login btn-login" href="#">Add coupon</a>
-                  <?php } else  { ?>
-                    <a id="sys_head_login" class="btn btn-green type-login btn-login" href="#">Login</a>
-                  <?php }?>
+                       <span style="padding-left: 5px;">
+                   <a id="" class="btn btn-green type-login btn-login" href="<?php echo base_url();?>admin/logout">Logout</a>
+                     </span>
+                        <a id="sys_head_addcoupon" class="btn btn-green type-login btn-login" href="#">Add coupon</a>
+                  <?php } else if($level>0) { ?>
+                    <a id="" class="btn btn-green type-login btn-login" href="<?php echo base_url();?>home/logout">Logout</a>
+                  <?php } else { ?>
+                     <a id="sys_head_login" class="btn btn-green type-login btn-login" href="#">Login</a>
+                  <?php } ?>
                     <nav class="main-nav">
                         <ul id="main-menu" class="nav nav-horizontal clearfix">
                             <li class="active">
