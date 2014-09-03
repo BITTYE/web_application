@@ -40,38 +40,6 @@
 
         ga('create', 'UA-53961033-1', 'auto');
         ga('send', 'pageview');
-function sub()
-{ var flag=true;
-   var sys_email=document.getElementById('sys_mail').value;
-   var sys_pass=document.getElementById('pass').value;
-     if(document.getElementById('sys_mail').value=='')
-         { 
-          document.getElementById('mailerror').inner    
-             flag=false;
-         }
-       if(document.getElementById('pass').value=='')
-         {
-             flag=false;
-         }
-         if(flag==false)
-             {
-         return false;
-             }
-             else { 
-            $.ajax({
-      url:'<?php echo base_url();?>home/buyervalidate',
-      type:'post',
-      async:false,
-      data:{sys_email:sys_email,
-           sys_pass:sys_pass},
-      success:function(data){
-            location.href='<?php echo base_url();?>home';
-    },
-   });     
-            $("#sys_pop_login").fadeOut();
-                 return true;
-             }
-}
     </script>
 
 </head>

@@ -109,6 +109,38 @@ window.fbAsyncInit = function() {
 	 }
 	},{scope: 'publish_stream'});
 }
+function sub()
+{ var flag=true;
+   var sys_email=document.getElementById('sys_mail').value;
+   var sys_pass=document.getElementById('pass').value;
+     if(document.getElementById('sys_mail').value=='')
+         { 
+          document.getElementById('mailerror').inner    
+             flag=false;
+         }
+       if(document.getElementById('pass').value=='')
+         {
+             flag=false;
+         }
+         if(flag==false)
+             {
+         return false;
+             }
+             else { 
+            $.ajax({
+      url:'<?php echo base_url();?>home/buyervalidate',
+      type:'post',
+      async:false,
+      data:{sys_email:sys_email,
+           sys_pass:sys_pass},
+      success:function(data){
+            location.href='<?php echo base_url();?>home';
+    },
+   });     
+            $("#sys_pop_login").fadeOut();
+                 return true;
+             }
+}
 </script>
 <header class="mod-header">
     <div class="grid_frame">
@@ -116,7 +148,7 @@ window.fbAsyncInit = function() {
             <div class="grid_12">
                 <div class="header-content clearfix">
                     <h1 id="logo" class="rs">
-                        <a href="<?php echo base_url();?>home/homeview">
+                        <a href="<?php echo base_url();?>home">
                             <img src="<?php echo base_url();?>images/logo.png" alt="$SITE_NAME"/>
                         </a>
                     </h1>
@@ -134,7 +166,7 @@ window.fbAsyncInit = function() {
                     <nav class="main-nav">
                         <ul id="main-menu" class="nav nav-horizontal clearfix">
                             <li class="active">
-                                <a href="<?php echo base_url();?>home/homeview">Home</a>
+                                <a href="<?php echo base_url();?>home">Home</a>
                             </li>
                             <li>
                                 <a href="<?php echo base_url();?>home/coupons">Coupons</a>
@@ -177,7 +209,7 @@ window.fbAsyncInit = function() {
                        
                             <?php include 'login-form.php';?>
                             <div class="right-create-acc">
-                                <img class="account" src="images/reg-account.png" alt="bittye.com">
+                                <img class="account" src="<?php echo base_url();?>images/reg-account.png" alt="bittye.com">
                                 <p class="lbl-dung-lo rs">Not a member? Don’t worry</p>
                                 <a id="sys_link_reg_panel" href="<?php echo base_url();?>home/register" class="btn-flat yellow btn-submit-reg">Create an account</a>
                                 <div id="sys_warning_sms" class="warning-sms" data-warning-txt="No spam guarantee,No disturb,Promotion News"></div>
@@ -234,9 +266,7 @@ window.fbAsyncInit = function() {
                 <div class="mod-register">
                     <h3 class="rs title-mod">Hello pretty! Welcome to coupon register</h3>
                     <div class="wrap-form-reg clearfix">
-                       
                             <?php include 'coupon_register.php';?>
-                       
                     </div>
                 </div><!--end: Login panel -->
             </div>

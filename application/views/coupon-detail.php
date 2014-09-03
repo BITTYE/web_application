@@ -38,8 +38,10 @@
         
         function like(buyerid,couponid)
         {
-          // alert(buyerid);
-          //  alert(couponid);
+          if(buyerid=='')
+              {
+                  alert('please login to like');
+              }
         $.ajax({
            url:'<?php echo base_url();?>home/addlike',
            type:'post',
@@ -51,13 +53,42 @@
            },
         });
         }
-        function unlike(id)
+        function unlike(buyerid,couponid)
         {
-           // alert('unlike');
-           // alert(id);
+            if(buyerid=='')
+              {
+                  alert('please login to unlike');
+              }
+           $.ajax({
+            url:'<?php echo base_url();?>home/unlike',
+            type:'post',
+            async:false,
+            data:{
+              buyerid:buyerid,
+              couponid:couponid
+            },
+            success:function(data){
+       
+                document.getElementById("unlikevalue"+couponid).innerHTML = data;
+               document.getElementById("likevalue"+couponid).innerHTML = data;
+            },
+             });
         }
     </script>
-
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <script>
+     document.getElementById('dataurlid').setAttribute('data-url',window.location);
+     
+      document.getElementById('fbshareid').setAttribute('data-href',window.location);
+      
+      (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=749598121719779&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+     </script>
 </head>
 <body class=""><!--<div class="alert_w_p_u"></div>-->
 
@@ -122,12 +153,13 @@
                             <div class="left-vote">
                                 <span class="lbl-work">100% work</span>
                                 <span class="lbl-vote"><span id="likevalue<?php echo $couponid;?>"><?php echo $likecount;?></span><i class="icon iAddVote" onclick="like('<?php echo $id;?>','<?php echo $couponid;?>');"></i></span>
-                                <span class="lbl-vote">2 <i class="icon iSubVote" onclick="unlike('<?php echo $id;?>','<?php echo $couponid;?>');"></i></span>
+                                <span class="lbl-vote"><span id="unlikevalue<?php echo $couponid;?>"><?php echo $likecount;?></span> <i class="icon iSubVote" onclick="unlike('<?php echo $id;?>','<?php echo $couponid;?>');"></i></span>
                             </div>
                             <div class="right-social">
                                 Share now
-                                <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-                                <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                                <div id="fbshareid" class="fb-share-button" data-href="" data-type="button" ></div>
+                                <!--<a><i class="fa fa-facebook-square fa-2x"></i></a>-->
+                                <a href="https://twitter.com/share"  id="dataurlid" data-url="" data-via="" data-lang="en"><i class="fa fa-twitter-square fa-2x"></i></a>
                                 <a href="#"><i class="fa fa-pinterest-square fa-2x"></i></a>
                                 <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
                             </div>

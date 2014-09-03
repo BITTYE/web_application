@@ -95,10 +95,26 @@ class couponmodel extends CI_Model{
       $likecount= $count->num_rows;
                        return  $likecount;
       }
+    }
+    public function deletelike()
+    {
+        $buyerid=$this->input->post('buyerid');
+        $couponid=$this->input->post('couponid');
         
-       /* $this->db->query("insert into liked_coupons values('','".$buyerid."','".$couponid."')");
-        $id=$this->db->insert_id();
-        return $id;*/
+         $res=$this->db->query("select * from liked_coupons where id_buyer='".$buyerid."' and id_coupons='".$couponid."'");
+         
+         if($res->num_rows()==0){
+             $count= $this->db->query("select * from liked_coupons where id_coupons='".$couponid."'");
+      $likecount= $count->num_rows;
+                       return  $likecount;
+      }  else {
+           $this->db->query("delete from liked_coupons where id_buyer='".$buyerid."' and id_coupons='".$couponid."' ");
+      
+      $count= $this->db->query("select * from liked_coupons where id_coupons='".$couponid."'");
+      $likecount= $count->num_rows;
+              return  $likecount; 
+      }
+         
     }
 }
 ?>

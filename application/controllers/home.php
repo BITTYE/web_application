@@ -56,6 +56,11 @@ class home extends CI_Controller{
        $id= $this->couponmodel->addbuyerlike();
        echo $id;
     }
+    public function unlike()
+    {
+        $id=$this->couponmodel->deletelike();
+        echo $id;
+    }
     public function couponcode()
     {
         $this->load->view('coupon-code');

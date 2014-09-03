@@ -40,7 +40,7 @@
                     <div class="grid_12">
                         <div class="header-content clearfix">
                             <h1 id="logo" class="rs">
-                                <a href="<?php echo base_url();?>home/homeview">
+                                <a href="<?php echo base_url();?>home">
                                     <img src="<?php echo base_url();?>images/logo.png" alt="$SITE_NAME"/>
                                 </a>
                             </h1>
@@ -48,7 +48,7 @@
                             <nav class="main-nav">
                                 <ul id="main-menu" class="nav nav-horizontal clearfix">
                                     <li>
-                                        <a href="<?php echo base_url();?>home/homeview">Home</a>
+                                        <a href="<?php echo base_url();?>home">Home</a>
                                     </li>
                                     <li>
                                         <a href="<?php echo base_url();?>home/coupons">Coupons</a>

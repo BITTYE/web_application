@@ -35,34 +35,36 @@
 
 <div class="container-page">
     <div class="mp-pusher" id="mp-pusher">
-        <header class="mod-header">
+         <?php include 'header.php';?>
+        <?php include 'mobile-nav.php';?>
+       <!-- <header class="mod-header">
             <div class="grid_frame">
                 <div class="container_grid clearfix">
                     <div class="grid_12">
                         <div class="header-content clearfix">
                             <h1 id="logo" class="rs">
-                                <a href="<?php echo base_url();?>home/homeview">
-                                    <img src="<?php echo base_url();?>images/logo.png" alt="$SITE_NAME"/>
+                                <a href="<?php// echo base_url();?>home/homeview">
+                                    <img src="<?php //echo base_url();?>images/logo.png" alt="$SITE_NAME"/>
                                 </a>
                             </h1>
                             <a id="sys_head_login" class="btn btn-green type-login btn-login" href="#">Login</a>
                             <nav class="main-nav">
                                 <ul id="main-menu" class="nav nav-horizontal clearfix">
                                     <li>
-                                        <a href="<?php echo base_url();?>home/homeview">Home</a>
+                                        <a href="<?php// echo base_url();?>home/homeview">Home</a>
                                     </li>
                                     <li>
-                                        <a href="<?php echo base_url();?>home/coupons">Coupons</a>
+                                        <a href="<?php //echo base_url();?>home/coupons">Coupons</a>
                                     </li>
                                     <li class="has-sub">
-                                        <a href="<?php echo base_url();?>home/couponcode">Coupons Code</a>
+                                        <a href="<?php //echo base_url();?>home/couponcode">Coupons Code</a>
                                         <ul class="sub-menu">
-                                            <li><a href="<?php echo base_url();?>home/couponcode">Coupons Code 1</a></li>
+                                            <li><a href="<?php// echo base_url();?>home/couponcode">Coupons Code 1</a></li>
                                             <li><a href="coupon-code-2.html">Coupons Code 2</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-sub">
-                                        <a href="<?php echo base_url();?>home/brandlist">Brands</a>
+                                        <a href="<?php// echo base_url();?>home/brandlist">Brands</a>
                                         <ul class="sub-menu">
                                             <li><a href="brand-detail-1.html">Brand Detail 1</a></li>
                                             <li><a href="brand-detail-2.html">Brand Detail 2</a></li>
@@ -71,9 +73,9 @@
                                             <li><a href="brand-detail-5.html">Brand Detail 5</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="<?php echo base_url();?>home/blog">Blog</a></li>
+                                    <li><a href="<?php// echo base_url();?>home/blog">Blog</a></li>
                                     <li>
-                                        <a href="<?php echo base_url();?>home/mycoupon">My coupons</a>
+                                        <a href="<?php //echo base_url();?>home/mycoupon">My coupons</a>
                                         <i class="icon iPickRed lbl-count"><span>12</span></i>
                                     </li>
                                 </ul>
@@ -114,7 +116,7 @@
                                         </div>
                                     </div>
                                     <div class="right-create-acc">
-                                        <img class="account" src="<?php echo base_url();?>images/reg-account.png" alt="Couponday.com">
+                                        <img class="account" src="<?php// echo base_url();?>images/reg-account.png" alt="Couponday.com">
                                         <p class="lbl-dung-lo rs">Not a member? Don’t worry</p>
                                         <a id="sys_link_reg_panel" href="register.php" class="btn-flat yellow btn-submit-reg">Create an account</a>
                                         <div id="sys_warning_sms" class="warning-sms" data-warning-txt="No spam guarantee,No disturb,Promotion News"></div>
@@ -122,7 +124,7 @@
                                 </form>
                                 <i class="line-sep"></i>
                             </div>
-                        </div><!--end: Login panel -->
+                        </div>
                         <div class="mod-register">
                             <h3 class="rs title-mod">Hello pretty! Welcome to Couponday.com</h3>
                             <div class="desc-reg">Sign up for free and get exclusive access to members-only savings, rewards and special promotions from Coupons.com. Enter in an email and a password or sign up with Facebook.</div>
@@ -163,7 +165,7 @@
                                     Back to login
                                 </a>
                             </p>
-                        </div><!--end: Register panel -->
+                        </div>
                     </div>
                     <div id="sys_paging_state" class="paging-state">
                         <i class="active"></i>
@@ -172,7 +174,7 @@
                     <i id="sys_close_login_popup" class="icon iClose close-popop"></i>
                 </div>
             </div>
-        </header><!--end: header.mod-header -->
+        </header>
         <nav id="mp-menu" class="mp-menu alternate-menu">
             <div class="mp-level">
                 <h2>Menu</h2>
@@ -209,7 +211,7 @@
                     <li><a href="login.php">Login</a></li>
                 </ul>
             </div>
-        </nav><!--end: .mp-menu -->
+        </nav>-->
         <div class="top-area">
             <div class="grid_frame">
                 <div class="container_grid clearfix">
