@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Bittye - admin panel</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -57,17 +57,18 @@
                                     <label>Full name</label>
                                     <input class="form-control">
 
-                                    <p class="help-block">Example block-level help text here.</p>
+                                    <!--<p class="help-block">Example block-level help text here.</p>-->
                                 </div>
                                 <div class="form-group">
                                     <label>Designation</label>
                                     <input class="form-control">
 
-                                    <p class="help-block">Example block-level help text here.</p>
+                                    <!--<p class="help-block">Example block-level help text here.</p>-->
                                 </div>
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <!--<table class="table table-striped table-bordered table-hover add-admin"
+                                       id="dataTables-example">
                                     <tr>
-                                        <td>Users</td>
+                                        <td>All Users</td>
                                         <td>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
@@ -90,7 +91,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Shops</td>
+                                        <td>All Shops</td>
                                         <td>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
@@ -113,7 +114,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Coupons</td>
+                                        <td>All Coupons</td>
                                         <td>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
@@ -136,7 +137,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Administrators</td>
+                                        <td>All Administrators</td>
                                         <td>
                                             <label class="radio-inline">
                                                 <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
@@ -159,9 +160,9 @@
                                         </td>
                                     </tr>
                                     </tbody>
-                                </table>
-                                <button type="submit" class="btn btn-default btn-success">Submit Button</button>
-                                <button type="reset" class="btn btn-default btn-danger">Reset Button</button>
+                                </table>-->
+                                <button type="submit" class="btn btn-default btn-success">Add</button>
+                                <button type="reset" class="btn btn-default btn-danger">Reset</button>
                             </form>
                         </div>
                     </div>
