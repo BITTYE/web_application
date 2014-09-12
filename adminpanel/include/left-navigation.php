@@ -40,10 +40,10 @@
                         <a href="all-shops.php">All shops list</a>
                     </li>
                     <li>
-                        <a href="morris.php">Shops with running deals</a>
+                        <a href="shops-with-running-coupons.php">Shops with running coupons</a>
                     </li>
                     <li>
-                        <a href="morris.php">Shops with pending actions deals</a>
+                        <a href="shops-with-running-deals.php">Shops with pending actions coupons</a>
                     </li>
                     <li>
                         <a href="edit-categories.php">Edit categories</a>

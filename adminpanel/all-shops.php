@@ -154,6 +154,71 @@
                             <td>
                                 <button class="btn btn-info btn-circle" type="button"><i class="fa fa-pencil"></i>
                                 </button>
+                                <div class="modal fade" id="editShopDetails" tabindex="-1" role="dialog"
+                                     aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title" id="myModalLabel">Shop Title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+
+                                                    <div class="col-lg-12">
+                                                        <form role="form">
+                                                            <div class="form-group">
+                                                                <label>Shop name</label>
+                                                                <input class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Shop Category</label>
+                                                                <select class="form-control" multiple="">
+                                                                    <option>Restarunt</option>
+                                                                    <option>Salon</option>
+                                                                    <option>Cafe</option>
+                                                                    <option>Cinema</option>
+                                                                    <option>Sports / games</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Shop description</label>
+                                                                <textarea rows="3" class="form-control"></textarea>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Address
+                                                                    <button class="btn btn-link" type="button">[+] Add
+                                                                        another address
+                                                                    </button>
+                                                                </label>
+                                                                <input class="form-control" placeholder="Line 1">
+                                                                <input class="form-control" placeholder="Line 2">
+                                                                <input class="form-control" placeholder="Landmark">
+                                                                <input class="form-control" placeholder="Pincode">
+                                                                <input class="form-control" placeholder="City">
+                                                                <label>Address
+                                                                    <button class="btn btn-link" type="button">[+] Add
+                                                                        another telephone
+                                                                    </button>
+                                                                </label>
+                                                                <input class="form-control" placeholder="Telephone">
+                                                            </div>
+                                                            <button type="submit" class="btn btn-default btn-success">
+                                                                Add
+                                                            </button>
+                                                            <button type="reset" class="btn btn-default btn-danger">
+                                                                Reset
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div>
+                                    <!-- /.modal-dialog -->
+                                </div>
                                 <button class="btn btn-danger btn-circle" type="button"><i class="fa fa-trash-o"></i>
                                 </button>
                             </td>
