@@ -42,7 +42,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">New Shop Registration</h1>
+                <h1 class="page-header">New Coupon Registration</h1>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -54,12 +54,12 @@
                         <div class="col-lg-6">
                             <form role="form">
                                 <div class="form-group">
-                                    <label>Shop name</label>
+                                    <label>Coupon name</label>
                                     <input class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Shop Category
-                                        <button class="btn btn-link">[+] Add new category</button>
+                                    <label>Coupon tag
+                                        <button class="btn btn-link">[+] Add new tag</button>
                                     </label>
                                     <select class="form-control" multiple="">
                                         <option>Restarunt</option>
@@ -70,22 +70,35 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Shop description</label>
+                                    <label>Select shop
+                                        <a class="btn btn-link" href="add-new-shop.php">[+] Add new Shop</a>
+                                    </label>
+                                    <select class="form-control">
+                                        <option>Empire</option>
+                                        <option>Vision cinemas</option>
+                                        <option>Coffeeday</option>
+                                        <option>Cinema</option>
+                                        <option>Sports / games</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Select shop address (If coupon is applied to single shop)
+                                        <a class="btn btn-link" href="all-shops.php#thisShop">[+] Add new address</a>
+                                    </label>
+                                    <select class="form-control">
+                                        <option>Address 1</option>
+                                        <option>Address 2</option>
+                                        <option>Address 3</option>
+                                        <option>Address 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Coupon description</label>
                                     <textarea rows="3" class="form-control"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label>Address
-                                        <button class="btn btn-link" type="button">[+] Add another address</button>
-                                    </label>
-                                    <input class="form-control" placeholder="Line 1">
-                                    <input class="form-control" placeholder="Line 2">
-                                    <input class="form-control" placeholder="Landmark">
-                                    <input class="form-control" placeholder="Pincode">
-                                    <input class="form-control" placeholder="City">
-                                    <label>Address
-                                        <button class="btn btn-link" type="button">[+] Add another telephone</button>
-                                    </label>
-                                    <input class="form-control" placeholder="Telephone">
+                                    <label>Upload images</label>
+                                    <input type="file"/>
                                 </div>
                                 <button type="submit" class="btn btn-default btn-success">Add</button>
                                 <button type="reset" class="btn btn-default btn-danger">Reset</button>

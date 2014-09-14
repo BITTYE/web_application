@@ -65,7 +65,7 @@
                 </thead>
                 <tbody>
                 <tr class="odd gradeX">
-                    <td>Empire</td>
+                    <td><a href="all-shops.php/#empire">empire</a></td>
                     <td><a href="#">Restarunt</a>, <a href="#">Hotel</a></td>
                     <td><a href="#">Link to respective deal details page in admin panel</a></td>
                     <td>10 Nov 2014</td>
@@ -87,58 +87,57 @@
                                                id="dataTables-example">
                                             <thead>
                                             <tr>
-                                                <th><a href="#">User name (link to his user details on admin panel)</a>
-                                                </th>
+                                                <th>User name (link to his user details on admin panel)</th>
                                                 <th>Users list</th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             </tbody>
@@ -152,13 +151,13 @@
                     </td>
                 </tr>
                 <tr class="odd gradeX">
-                    <td>Empire</td>
+                    <td><a href="all-shops.php/#empire">empire</a></td>
                     <td><a href="#">Restarunt</a>, <a href="#">Hotel</a></td>
                     <td><a href="#">Link to respective deal details page in admin panel</a></td>
                     <td>10 Nov 2014</td>
                     <td>
                         <button class="btn btn-link" type="button" data-toggle="modal"
-                                data-target="#grabbed-users-list-deal1">56 users
+                                data-target="#grabbed-users-list-deal1">82 users
                         </button>
                         <div class="modal fade" id="grabbed-users-list-deal1" tabindex="-1" role="dialog"
                              aria-labelledby="myModalLabel" aria-hidden="true">
@@ -174,58 +173,57 @@
                                                id="dataTables-example">
                                             <thead>
                                             <tr>
-                                                <th><a href="#">User name (link to his user details on admin panel)</a>
-                                                </th>
+                                                <th>User name (link to his user details on admin panel)</th>
                                                 <th>Users list</th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             <tr class="odd gradeX">
-                                                <td>Pavan</td>
+                                                <td><a href="all-users.php/#pavan">Pavan</a></td>
                                                 <td>10 Nov 2014</td>
                                             </tr>
                                             </tbody>

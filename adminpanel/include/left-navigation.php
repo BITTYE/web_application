@@ -43,16 +43,7 @@
                         <a href="shops-with-running-coupons.php">Shops with running coupons</a>
                     </li>
                     <li>
-                        <a href="shops-with-running-deals.php">Shops with pending actions coupons</a>
-                    </li>
-                    <li>
-                        <a href="edit-categories.php">Edit categories</a>
-                    </li>
-                    <li>
-                        <a href="edit-tags.php">Edit tags</a>
-                    </li>
-                    <li>
-                        <a href="user-reviews.php">User comments</a>
+                        <a href="all-categories.php">All categories list</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
@@ -61,19 +52,16 @@
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Coupons<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="flot.php">Add new Coupon</a>
+                        <a href="add-new-coupon.php">Add new Coupon</a>
                     </li>
                     <li>
-                        <a href="morris.php">All Coupons list</a>
+                        <a href="all-coupons.php">All Coupons list</a>
                     </li>
                     <li>
-                        <a href="morris.php">Active Coupons</a>
+                        <a href="active-coupons.php">Active Coupons</a>
                     </li>
                     <li>
-                        <a href="morris.php">Coupons with pending actions</a>
-                    </li>
-                    <li>
-                        <a href="user-reviews.php">User reviews</a>
+                        <a href="coupons-with-pending-actions.php">Coupons with pending actions</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
