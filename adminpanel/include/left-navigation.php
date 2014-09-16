@@ -76,10 +76,10 @@
                         <a href="all-admins.php">All Administrators list</a>
                     </li>
                     <li>
-                        <a href="morris.php">Add Administrator groups</a>
+                        <a href="add-admin-group.php">Add Administrator groups</a>
                     </li>
                     <li>
-                        <a href="morris.php">Administrator group list</a>
+                        <a href="all-admin-groups.php">Administrator group list</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->

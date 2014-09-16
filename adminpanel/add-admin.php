@@ -56,113 +56,31 @@
                                 <div class="form-group">
                                     <label>Full name</label>
                                     <input class="form-control">
-
-                                    <!--<p class="help-block">Example block-level help text here.</p>-->
                                 </div>
                                 <div class="form-group">
                                     <label>Designation</label>
                                     <input class="form-control">
-
-                                    <!--<p class="help-block">Example block-level help text here.</p>-->
                                 </div>
-                                <!--<table class="table table-striped table-bordered table-hover add-admin"
-                                       id="dataTables-example">
-                                    <tr>
-                                        <td>All Users</td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>No
-                                                Access
-                                            </label></td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>Read
-                                            </label></td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>Write
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>All Shops</td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>No
-                                                Access
-                                            </label></td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>Read
-                                            </label></td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>Write
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>All Coupons</td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>No
-                                                Access
-                                            </label></td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>Read
-                                            </label></td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>Write
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>All Administrators</td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>No
-                                                Access
-                                            </label></td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>Read
-                                            </label></td>
-                                        <td>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1"
-                                                       value="option1"
-                                                       checked>Write
-                                            </label>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>-->
+                                <div class="form-group">
+                                    <label>Select admin group</label>
+                                    <select class="form-control">
+                                        <option>Super admin</option>
+                                        <option>admin</option>
+                                        <option>Sales</option>
+                                        <option>Marketing</option>
+                                        <option>Shop</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input class="form-control" type="password">
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirm Password</label>
+                                    <input class="form-control" type="password">
+                                </div>
                                 <button type="submit" class="btn btn-default btn-success">Add</button>
-                                <button type="reset" class="btn btn-default btn-danger">Reset</button>
+                                <button type="reset" class="btn btn-default btn-danger">Cancle</button>
                             </form>
                         </div>
                     </div>
