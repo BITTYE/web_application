@@ -220,7 +220,7 @@ function sub()
                 </div><!--end: Login panel -->
                 <div class="mod-register">
                     <h3 class="rs title-mod">Hello pretty! Welcome to bittye.com</h3>
-                    <div class="desc-reg">Sign up for free and get exclusive access to members-only savings, rewards and special promotions from Coupons.com. Enter in an email and a password or sign up with Facebook.</div>
+                    <div class="desc-reg">Sign up for free and get exclusive access to members-only savings, rewards and special promotions from bittye. Enter in an email and a password or sign up with Facebook.</div>
                     <div class="wrap-form-reg clearfix">
                        
                             <?php include 'register-form.php';?>

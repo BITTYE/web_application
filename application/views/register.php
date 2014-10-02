@@ -121,8 +121,8 @@
         <div class="grid_frame page-content">
             <div class="container_grid">
                 <div class="mod-register">
-                    <h3 class="rs title-mod">Hello pretty! Welcome to Couponday.com</h3>
-                    <div class="desc-reg">Sign up for free and get exclusive access to members-only savings, rewards and special promotions from Coupons.com. Enter in an email and a password or sign up with Facebook.</div>
+                    <h3 class="rs title-mod">Hello pretty! Welcome to Bittye.com</h3>
+                    <div class="desc-reg">Sign up for free and get exclusive access to members-only savings, rewards and special promotions from bittye. Enter in an email and a password or sign up with Facebook.</div>
                     <div class="wrap-form-reg clearfix">
                         <form action="#">
                             <?php include 'register-form.php';?>
@@ -154,7 +154,7 @@
                     <div class="container_grid clearfix">
                         <div class="grid_3">
                             <div class="company-info">
-                                <img src="images/logo-gray.png" alt="CouponDay"/>
+                                <img src="images/logo-gray.png" alt="Bittye"/>
                                 <p class="rs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</p>
                                 <p class="rs">
                                     1200 Balh Blah Avenue <br />
@@ -230,7 +230,7 @@
                             <a href="#">Contact</a>
                         </div>
                         <div class="copyright">
-                            Copyright &copy; 2014 by www.couponday.com
+                            Copyright &copy; 2014 by www.Bittye.com
                         </div>
                     </div>
                 </div>

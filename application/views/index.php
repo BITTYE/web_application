@@ -92,7 +92,7 @@
                     <div class="time-left"><?php echo $interval->days;?> days left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <?php } ?>
            
@@ -121,7 +121,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -138,7 +138,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -155,7 +155,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -172,7 +172,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -189,7 +189,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -206,7 +206,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -223,7 +223,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -240,7 +240,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -257,7 +257,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -274,7 +274,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -291,7 +291,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -308,7 +308,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -325,7 +325,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -342,7 +342,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -359,7 +359,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -376,7 +376,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -393,7 +393,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
         <div class="coupon-item grid_12">
@@ -410,7 +410,7 @@
                     <div class="time-left">9 days 4 hours left</div></div>
                 <a class="btn btn-blue btn-take-coupon grid_4" href="#">Grab it!</a>
             </div>
-            <i class="stick-lbl hot-sale"></i>
+            <i class="stick-lbl hot-deal"></i>
         </div>
         <!--end: .coupon-item -->
     </div>

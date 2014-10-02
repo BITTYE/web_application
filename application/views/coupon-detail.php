@@ -94,8 +94,8 @@
 
 <div class="container-page">
     <div class="mp-pusher" id="mp-pusher">
-        <?php include 'include/header.php';?>
-        <?php include 'mobile-nav.php';?>
+        <?php include 'includes/header.php';?>
+        <?php include 'includes/mobile-nav.php';?>
         <div class="top-area">
             <div class="grid_frame">
                 <div class="container_grid clearfix">
@@ -137,7 +137,7 @@
                                     <a href="#" class="ver_container"><img src="<?php echo $couponurl;?>" alt="$COUPON_TITLE"></a>
                                 </div>
                             </div>
-                            <i class="stick-lbl hot-sale"></i>
+                            <i class="stick-lbl hot-deal"></i>
                         </div>
                     </div>
         
@@ -206,7 +206,7 @@
                                 <div class="time-left">9 days 4 hours left</div>
                                 <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
                             </div>
-                            <i class="stick-lbl hot-sale"></i>
+                            <i class="stick-lbl hot-deal"></i>
                         </div><!--end: .coupon-item -->
                         <div class="coupon-item grid_3">
                             <div class="coupon-content">
@@ -222,7 +222,7 @@
                                 <div class="time-left">9 days 4 hours left</div>
                                 <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
                             </div>
-                            <i class="stick-lbl hot-sale"></i>
+                            <i class="stick-lbl hot-deal"></i>
                         </div><!--end: .coupon-item -->
                         <div class="coupon-item grid_3">
                             <div class="coupon-content">
@@ -238,7 +238,7 @@
                                 <div class="time-left">2 days 14 hours left</div>
                                 <a class="btn btn-blue btn-take-coupon untake" href="#">Un Take Coupon</a>
                             </div>
-                            <i class="stick-lbl hot-sale"></i>
+                            <i class="stick-lbl hot-deal"></i>
                         </div><!--end: .coupon-item -->
                         <div class="coupon-item grid_3">
                             <div class="coupon-content">
@@ -254,7 +254,7 @@
                                 <div class="time-left">12 days 1 hour left</div>
                                 <a class="btn btn-blue btn-take-coupon" href="#">Take Coupon</a>
                             </div>
-                            <i class="stick-lbl hot-sale"></i>
+                            <i class="stick-lbl hot-deal"></i>
                         </div><!--end: .coupon-item -->
                         <div class="coupon-item grid_3">
                             <div class="coupon-content">
