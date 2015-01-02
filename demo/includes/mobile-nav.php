@@ -2,7 +2,7 @@
     <div class="mp-level">
         <h2>Menu</h2>
         <ul>
-            <li><a href="../index-2.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="../coupon.html">Coupons</a></li>
             <li class="has-sub">
                 <a href="../coupon-code.html">Coupons Code</a>
@@ -21,16 +21,16 @@
                     <h2>Brands</h2>
                     <a class="mp-back" href="#">back</a>
                     <ul>
-                        <li><a href="../brand-detail-1.html">Brand Detail 1</a></li>
-                        <li><a href="../brand-detail-2.html">Brand Detail 2</a></li>
-                        <li><a href="../brand-detail-3.html">Brand Detail 3</a></li>
-                        <li><a href="../brand-detail-4.html">Brand Detail 4</a></li>
-                        <li><a href="../brand-detail-5.html">Brand Detail 5</a></li>
+                        <li><a href="#">Empire Hotel</a></li>
+                        <li><a href="#">PVR cinemas</a></li>
+                        <li><a href="#">Pizza hut</a></li>
+                        <li><a href="#">Play arena</a></li>
+                        <li><a href="#">Samarrun Biyrani</a></li>
                     </ul>
                 </div>
             </li>
-            <li><a href="../blog.html">Blog</a></li>
-            <li><a href="../my-coupon.html">My coupons(12)</a></li>
+            <!--<li><a href="../blog.html">Blog</a></li>-->
+            <li><a href="profile.php">My grabs(12)</a></li>
             <li><a href="../login.php">Login</a></li>
         </ul>
     </div>

@@ -12,7 +12,7 @@
 
                         <p class="rs">
                             1200 Balh Blah Avenue <br/>
-                            Hanoi, Vietnam 12137
+                            Bangalore, India 12137
                         </p>
                     </div>
                 </div>

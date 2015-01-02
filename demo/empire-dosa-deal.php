@@ -98,13 +98,58 @@
         </div>
         <div class="wrap-btn clearfix">
             <div class="day-left">9 days 4 hours left</div>
-            <a class="btn btn-blue btn-take-coupon" href="#">Grab it!</a>
+            <a class="btn btn-blue btn-take-coupon grabbed_pop" href="#">Grab it!</a><br/><br/>
+
+            <div>You are agreeing to our terms and conditions by grabbing this coupon.</div>
+            <div id="grabbed_pop" class="pop-grab">
+                <div class="viewport-pop">
+                    <div class="transport-viewer clearfix">
+                        <div class="mod-register">
+                            <h3 class="rs title-mod">All the best for you to win this coupon</h3>
+
+                            <div class="right-social center-social">Share this coupon with friends<a href="#"><i
+                                    class="fa fa-facebook-square fa-2x"></i></a>
+                                <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-square fa-2x"></i></a>
+                                <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                            </div>
+                            <div class="grid_12" style="text-align: center; margin: 70px 0 0">
+                                <div class="rs ta-c brand-logo"><img src="images/brands/empire.jpg" alt="$BRAND_NAME">
+                                </div>
+                                <p class="rs brand-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                                    quis
+                                    metus non nunc iaculis dapibus. Nullam tempus accumsan metus vitae facilisis. Nullam
+                                    non
+                                    faucibus nisi, nec auctor neque. Ut consequat consequat purus. Sed vestivbulum
+                                    viverra
+                                    nulla vel fermentum. Fusce luctus ultrices lorem, in placerat nibh adipiscing
+                                    ut. </p>
+
+                                <div class="follow-info">
+                                    <a class="btn btn-blue btn-follow-brand" href="#">Follow brand</a>
+                                    <span class="count-follower">253.107</span>
+                                </div>
+                                <div class="social-link">
+                                    <span class="lbl">Connect brand</span>
+                                <span class="wrap-link">
+                                    <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                                    <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest-square fa-2x"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end: Login panel -->
+                    </div>
+                    <a href="index.php" class="icon iClose close-popop"></a>
+                </div>
+            </div>
         </div>
         <div class="wrap-action clearfix">
             <div class="left-vote">
-                <span class="lbl-work">100% work</span>
-                <span class="lbl-vote">12 <i class="icon iAddVote"></i></span>
-                <span class="lbl-vote">2 <i class="icon iSubVote"></i></span>
+                <span class="lbl-vote">12 <i class="">Grabbed</i></span>
+                <span class="lbl-vote">2 <i class="">Liked</i></span>
             </div>
             <div class="right-social">
                 Share now
@@ -134,7 +179,7 @@
                 interdum ipsum, eu gravida massa cursus id. Pellentesque feugiat ante eu scelerisque porta. In quis
                 velit ligula.
             </div>
-            <a class="link-brand" href="#">View Brand</a>
+            <a class="link-brand" href="empire.php">View Brand</a>
         </div>
     </div>
 </div>
@@ -305,7 +350,7 @@
     <div class="grid_12">
         <h3 class="title-block has-link">
             POPULAR BRANDS (129)
-            <a href="#" class="link-right">See all <i class="pick-right"></i></a>
+            <a href="see-all-coupons.php" class="link-right">See all <i class="pick-right"></i></a>
         </h3>
     </div>
     <div class="block-content list-brand clearfix">
@@ -380,109 +425,7 @@
 <!--end: .mod-brand -->
 </div>
 </div>
-<footer class="mod-footer">
-    <div class="footer-top">
-        <div class="grid_frame">
-            <div class="container_grid clearfix">
-                <div class="grid_3">
-                    <div class="company-info">
-                        <img src="images/logo-gray.png" alt="bittye"/>
-
-                        <p class="rs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-                            veniam, quis nostrud</p>
-
-                        <p class="rs">
-                            1200 Balh Blah Avenue <br/>
-                            Hanoi, Vietnam 12137
-                        </p>
-                    </div>
-                </div>
-                <div class="grid_3">
-                    <div class="block social-link">
-                        <h3 class="title-block">Follow us</h3>
-
-                        <div class="block-content">
-                            <ul class="rs">
-                                <li>
-                                    <i class="fa fa-facebook-square fa-2x"></i>
-                                    <a href="#" target="_blank">Our Facebook page</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-twitter-square fa-2x"></i>
-                                    <a href="#" target="_blank">Follow our Tweets</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-pinterest-square fa-2x"></i>
-                                    <a href="#" target="_blank">Follow our Pin board</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--end: Follow us -->
-                <div class="grid_3">
-                    <div class="block intro-video">
-                        <h3 class="title-block">Intro Video</h3>
-
-                        <div class="block-content">
-                            <div class="block-content">
-                                <div class="wrap-video" id="sys_wrap_video">
-                                    <div class="lightbox-video">
-                                        <a class="html5lightbox" href="http://player.vimeo.com/video/36932496" title=""><i
-                                                class="btn-play"></i><img src="images/video-img.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end: Intro Video -->
-                <div class="grid_3">
-                    <div class="block blog-recent">
-                        <h3 class="title-block">Latest blog</h3>
-
-                        <div class="block-content">
-                            <div class="entry-item flex">
-                                <a class="thumb-left" href="#">
-                                    <img src="images/ex/04-14.jpg" alt="$TITLE"/>
-                                </a>
-
-                                <div class="flex-body"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                    eli</a></div>
-                            </div>
-                            <div class="entry-item flex">
-                                <a class="thumb-left" href="#">
-                                    <img src="images/ex/04-14.jpg" alt="$TITLE"/>
-                                </a>
-
-                                <div class="flex-body"><a href="#">Ut wisi enim ad minim veniam, quis nostrud</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end: blog-recent -->
-            </div>
-        </div>
-    </div>
-    <!--end: .foot-top-->
-    <div class="foot-copyright">
-        <div class="grid_frame">
-            <div class="container_grid clearfix">
-                <div class="left-link">
-                    <a href="#">Home</a>
-                    <a href="#">Term of conditions</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Support</a>
-                    <a href="#">Contact</a>
-                </div>
-                <div class="copyright">
-                    Copyright © 2014 by BITTYE. Designed by MegaDrupal
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+<?php include 'includes/footer.php'; ?>
 </div>
 </div>
 

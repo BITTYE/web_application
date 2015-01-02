@@ -18,7 +18,7 @@
         <input class="input-txt" id="sys_pass_conf" type="password" placeholder="confirm password"/>
     </label>
     <label class="wrap-check grid_12 make-left" for="sys_chk_news">
-        <input id="sys_chk_news" class="input-chk make-left" type="checkbox"/> Send me the weekly Bittye.com’s offers.
+        <input id="sys_chk_news" class="input-chk make-left" type="checkbox"/> Send me the daily Bittye.com’s offers.
         <i class="icon iUncheck"></i>
     </label>
     <label class="wrap-check grid_12 make-left" for="sys_chk_agree">

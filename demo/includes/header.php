@@ -5,32 +5,29 @@
                 <div class="header-content clearfix">
                     <h1 id="logo" class="rs">
                         <a href="index.php">
-                            <img src="../images/logo.png" alt="$SITE_NAME"/>
+                            <img src="images/logo.png" alt="$SITE_NAME"/>
                         </a>
                     </h1>
                     <a id="sys_head_login" class="btn btn-green type-login btn-login" href="#">Login</a>
                     <nav class="main-nav">
                         <ul id="main-menu" class="nav nav-horizontal clearfix">
                             <li class="active">
-                                <a href="../index-2.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="../coupon.html">Coupons</a>
+                                <a href="index.php">Home</a>
                             </li>
                             <li class="has-sub">
                                 <a href="../brand-list.html">Brands</a>
                                 <ul class="sub-menu">
-                                    <li><a href="../brand-detail-1.html">Brand Detail 1</a></li>
-                                    <li><a href="../brand-detail-2.html">Brand Detail 2</a></li>
-                                    <li><a href="../brand-detail-3.html">Brand Detail 3</a></li>
-                                    <li><a href="../brand-detail-4.html">Brand Detail 4</a></li>
-                                    <li><a href="../brand-detail-5.html">Brand Detail 5</a></li>
+                                    <li><a href="#">Empire Hotel</a></li>
+                                    <li><a href="#">PVR cinemas</a></li>
+                                    <li><a href="#">Pizza hut</a></li>
+                                    <li><a href="#">Play arena</a></li>
+                                    <li><a href="#">Samarrun Biyrani</a></li>
                                 </ul>
                             </li>
-                            <li><a href="../blog.html">Blog</a></li>
+                            <!--<li><a href="../blog.html">Blog</a></li>-->
                             <li>
-                                <a href="../my-coupon.html">My coupons</a>
-                                <i class="icon iPickRed lbl-count"><span>12</span></i>
+                                <a href="profile.php">My grabs</a>
+                                <i class="icon iPickRed lbl-count"><span>2 / 5</span></i>
                             </li>
                         </ul>
                         <a id="sys_btn_toogle_menu" class="btn-toogle-res-menu" href="#alternate-menu"></a>

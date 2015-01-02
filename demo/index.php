@@ -52,18 +52,18 @@
 <div class="mp-pusher" id="mp-pusher">
 <?php include 'includes/header.php';?>
 <?php include 'includes/mobile-nav.php';?>
-<!--<?php include 'banner.php';?>-->
+<!--<?php include 'includes/banner.php';?>-->
 <div class="grid_frame page-content">
-    <?php include 'subscription.php'; ?>
+    <?php include 'includes/subscription.php'; ?>
 </div>
-<?php include 'filter.php';?>
+<?php include 'includes/filter.php';?>
 <div class="grid_frame page-content">
 <div class="container_grid">
 <div class="mod-grp-coupon block clearfix">
     <div class="grid_12">
         <h3 class="title-block has-link">
             New Coupons
-            <a href="#" class="link-right">See all <i class="pick-right"></i></a>
+            <a href="see-all-coupons.php" class="link-right">See all <i class="pick-right"></i></a>
         </h3>
     </div>
     <div class="block-content list-coupon clearfix">
@@ -106,7 +106,7 @@
         <div class="grid_12">
             <h3 class="title-block has-link">
                 Featured Coupons
-                <a href="#" class="link-right">See all <i class="pick-right"></i></a>
+                <a href="see-all-coupons.php" class="link-right">See all <i class="pick-right"></i></a>
             </h3>
         </div>
         <div class="block-content list-coupon clearfix">
@@ -149,7 +149,7 @@
     <div class="grid_12">
         <h3 class="title-block has-link">
             POPULAR BRANDS (129)
-            <a href="#" class="link-right">See all <i class="pick-right"></i></a>
+            <a href="see-all-coupons.php" class="link-right">See all <i class="pick-right"></i></a>
         </h3>
     </div>
     <div class="block-content list-brand clearfix">
